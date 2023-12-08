@@ -44,9 +44,11 @@ body {
     font-weight: 600;
     letter-spacing: .5px;
     font-size: clamp(2rem, 5vw, 4rem);
-    color: var(--clr-darkGreen);
+    color: var(--clr-white);
+    -webkit-text-stroke: 1.5px var(--clr-blk);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     padding: .5rem 1rem;
-    background-color: var(--clr-white);
+    
 }
 .parallax img {
     position: absolute;
