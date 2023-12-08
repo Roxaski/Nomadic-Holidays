@@ -134,6 +134,32 @@ body {
     font-size: clamp(1rem, 3vw, 1.2rem);
     cursor: pointer;
 }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+.card-container .card {
+    padding: 1rem;
+    color: var(--clr-blk);
+    background-color: var(--clr-lightGrey);
+}
+.card-container .card .fa-solid {
+    font-size: 1.4rem;
+}
+.card-container .card h3 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: .5rem auto .25rem;
+}
+.card-container .card p  {
+    font-size: clamp(.95rem, 3vw, 1rem);
+}
+/*MEDIA QUERY'S*/
 @media screen and (max-width: 900px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
