@@ -114,6 +114,26 @@ body {
     font-family: 'Whisper', cursive;
     font-weight: 800;
 }
+#parallax-slow {
+    padding: 2rem;
+    background-image: url(./img/mountain_lake.webp);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+#parallax-slow h2 {
+    margin: 0 auto;
+    width: 10rem;
+    padding: .5rem;
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-blk);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    cursor: pointer;
+}
 @media screen and (max-width: 900px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
