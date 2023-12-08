@@ -44,9 +44,9 @@ body {
     font-weight: 600;
     letter-spacing: .5px;
     font-size: clamp(2rem, 5vw, 4rem);
-    color: var(--clr-white);
+    color: var(--clr-darkGreen);
     padding: .5rem 1rem;
-    background-color: var(--clr-blk);
+    background-color: var(--clr-white);
 }
 .parallax img {
     position: absolute;
@@ -54,7 +54,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
-/*FIRST SECTION*/
+/*SECTIONS*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -114,8 +114,6 @@ body {
 }
 @media screen and (max-width: 900px) {
     .container {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        background-color: var(--clr-darkGreen);
     }
 }
