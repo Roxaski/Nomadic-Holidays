@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Whisper&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-blk: #212121;
+    --clr-white: #ebe7e7;
+    --clr-lightGrey: #e7dcdc;
+    --clr-green: #9a8a46;
+    --clr-darkGreen: #282c19;
+}
+body {
+    background-color: var(--clr-blk);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    cursor: default;
+    color: var(--clr-white);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--clr-white);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-green);
+    border-radius: 5px;
+}
+/*HERO PARALLAX*/
+.parallax {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.parallax h1 {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: var(--clr-white);
+    padding: .5rem 1rem;
+    background-color: var(--clr-blk);
+}
+.parallax img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*FIRST SECTION*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--clr-darkGreen);
+}
+.container .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+.text h2 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.text p {
+    font-weight: 400;
+    line-height: 2;
+    margin: 10px auto;
+}
+.text #quote {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-weight: 300;
+    color: var(--clr-lightGrey);
+}
+.text span {
+    font-size: 1.4rem;
+    position: relative;
+    top: .3rem;
+}
+.container .img-wrapper {
+    padding: 2rem;
+    position: relative;
+}
+.container .img-wrapper img {
+    width: 100%;
+    height: auto;
+    border: var(--clr-white) solid 5px;
+    border-bottom: 60px solid var(--clr-white);
+}
+.container .img-wrapper p {
+    position: absolute;
+    display: inline-block;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    color: var(--clr-blk);
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: clamp(1.8rem, 3vw, 2rem);
+    font-family: 'Whisper', cursive;
+    font-weight: 800;
+}
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: var(--clr-darkGreen);
+    }
+}
