@@ -8,5 +8,5 @@ window.addEventListener('scroll', () => {
 
     text.style.marginBottom = value - 2.5 + 'px';
     clouds.style.marginTop = value - 2.5 + 'px';
-    parallaxSlow.style.backgroundPositionY = value * 0.11 + 'px';
+    parallaxSlow.style.backgroundPositionY = value * .25 + 'px';
 });

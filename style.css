@@ -29,7 +29,7 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
-/*HERO PARALLAX*/
+/*PARALLAX HERO*/
 .parallax {
     height: 100vh;
     width: 100%;
@@ -57,7 +57,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
-/*SECTIONS*/
+/*POLAROIDS AND INFORMATION*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -115,6 +115,7 @@ body {
     font-family: 'Whisper', cursive;
     font-weight: 800;
 }
+/*BOOK NOW PARALLAX*/
 #parallax-slow {
     padding: 2rem;
     background-image: url(./img/mountain_lake.webp);
@@ -134,7 +135,11 @@ body {
     font-size: clamp(1rem, 3vw, 1.2rem);
     cursor: pointer;
 }
-.card-container {
+/*ACTIVITIES*/
+#activity-section {
+    background-color: var(--clr-darkGreen);
+}
+.activities {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
@@ -142,21 +147,22 @@ body {
     width: 85%;
     margin: 0 auto;
 }
-.card-container .card {
+.activities .card {
     padding: 1rem;
     color: var(--clr-blk);
-    background-color: var(--clr-lightGrey);
+    background-color: var(--clr-white);
 }
-.card-container .card .fa-solid {
+.activities .card .fa-solid {
     font-size: 1.4rem;
 }
-.card-container .card h3 {
+.activities .card h3 {
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 600;
     margin: .5rem auto .25rem;
 }
-.card-container .card p  {
+.activities .card p  {
+    color: var(--clr-blk);
     font-size: clamp(.95rem, 3vw, 1rem);
 }
 /*MEDIA QUERY'S*/
