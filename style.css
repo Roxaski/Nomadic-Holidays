@@ -12,7 +12,7 @@
     --clr-darkGreen: #282c19;
 }
 body {
-    background-color: var(--clr-blk);
+    background-color: var(--clr-darkGreen);
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     cursor: default;
@@ -136,16 +136,13 @@ body {
     cursor: pointer;
 }
 /*ACTIVITIES*/
-#activity-section {
-    background-color: var(--clr-darkGreen);
-}
 .activities {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
     gap: 1rem;
     width: 85%;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 .activities .card {
     padding: 1rem;
@@ -164,6 +161,48 @@ body {
 .activities .card p  {
     color: var(--clr-blk);
     font-size: clamp(.95rem, 3vw, 1rem);
+}
+/*PRICING*/
+.pricing-wrapper {
+    background-image: url(./img/pricingBG.webp);
+    position: relative;
+    background-size: cover;
+}
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 975px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.pricing .card {
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-darkGreen);
+    border: solid 2px var(--clr-lightGrey);
+}
+.pricing .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.pricing .card h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 2;
+    margin: 10px auto 0;
+}
+.pricing .card h4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .75px;
+}
+.pricing .card p {
+    padding: .75rem;
+    width: 100%;
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 900px) {
