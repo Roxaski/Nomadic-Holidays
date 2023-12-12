@@ -166,7 +166,9 @@ body {
 /*PRICING*/
 .pricing-wrapper {
     background-image: url(./img/pricingBG.webp);
-    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
 .pricing {

@@ -1,6 +1,7 @@
 let text = document.getElementById('text');
 let clouds = document.getElementById('clouds');
 let parallaxSlow = document.getElementById('parallax-slow');
+let pricingParallax = document.getElementById('pricing-parallax');
 
 //PARALLAX SCROLLING
 window.addEventListener('scroll', () => {
