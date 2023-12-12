@@ -2,7 +2,7 @@ let text = document.getElementById('text');
 let clouds = document.getElementById('clouds');
 let parallaxSlow = document.getElementById('parallax-slow');
 
-//OARALLAX SCROLLING
+//PARALLAX SCROLLING
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
