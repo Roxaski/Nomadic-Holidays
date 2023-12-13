@@ -245,6 +245,16 @@ body {
 .pricing button:hover {
     background-color: var(--clr-lightGreen);
 }
+/*CONTACT FORM*/
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 900px) {
     .container {
