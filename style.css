@@ -12,7 +12,7 @@
     --clr-green: #9a8a46;
     --clr-lightGreen: #a9ba80;
     --clr-midGreen: #323826;
-    --clr-darkGreen: #282c19;
+    --clr-darkGreen: #262a18;
     --clr-darkerGreen: #31381e;
 }
 body {
@@ -41,18 +41,6 @@ body {
     justify-content: center;
     position: relative;
     filter: brightness(95%);
-}
-.parallax h1 {
-    position: absolute;
-    bottom: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .5px;
-    font-size: clamp(2rem, 5vw, 4rem);
-    color: var(--clr-lightGrey);
-    background-color: var(--clr-darkGreen);
-    padding: .5rem 1rem;
-    border-radius: 10px;
 }
 .parallax img {
     position: absolute;
