@@ -41,7 +41,7 @@ body {
     justify-content: center;
     position: relative;
     filter: brightness(95%);
-    z-index: -2;
+    z-index: -1;
 }
 .parallax img {
     position: absolute;
@@ -50,7 +50,7 @@ body {
     object-fit: cover;
 }
 /*HEADER*/
-h1 {
+header h1 {
     position: relative;
     top: 13rem;
     font-weight: 500;
@@ -67,7 +67,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-darkGreen);
-    padding-top: 5rem;
 }
 .container .text {
     display: flex;
