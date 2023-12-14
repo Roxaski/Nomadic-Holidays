@@ -41,7 +41,7 @@ body {
     justify-content: center;
     position: relative;
     filter: brightness(95%);
-    z-index: -1;
+    z-index: -2;
 }
 .parallax img {
     position: absolute;
@@ -49,11 +49,25 @@ body {
     width: 100%;
     object-fit: cover;
 }
-/*POLAROIDS AND INFORMATION*/
+/*HEADER*/
+h1 {
+    position: relative;
+    top: 13rem;
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 2rem);
+    background: var(--clr-darkGreen);
+    border: solid 5px var(--clr-lightGrey);
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+/*INFORMATION*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-darkGreen);
+    padding-top: 5rem;
 }
 .container .text {
     display: flex;
