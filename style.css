@@ -63,12 +63,12 @@ header h1 {
     z-index: 1;
 }
 /*POLAROIDS*/
-.container {
+.polaroids {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-darkGreen);
 }
-.container .text {
+.polaroids .text {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -77,36 +77,36 @@ header h1 {
     width: 100%;
     padding: 2rem;
 }
-.text h2 {
+.polaroids .text h2 {
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 500;
 }
-.text p {
+.polaroids .text p {
     font-weight: 400;
     line-height: 2;
     margin: 10px auto;
 }
-.text #quote {
+.polaroids .text #quote {
     font-size: clamp(.9rem, 3vw, 1rem);
     font-weight: 300;
 }
-.text span {
+.polaroids .text span {
     font-size: 1.4rem;
     position: relative;
     top: .3rem;
 }
-.container .img-wrapper {
+.polaroids .img-wrapper {
     padding: 2rem;
     position: relative;
 }
-.container .img-wrapper img {
+.polaroids .img-wrapper img {
     width: 100%;
     height: auto;
     border: var(--clr-white) solid 5px;
     border-bottom: 60px solid var(--clr-white);
 }
-.container .img-wrapper p {
+.polaroids .img-wrapper p {
     position: absolute;
     display: inline-block;
     bottom: 3rem;
@@ -127,18 +127,24 @@ header h1 {
     position: relative;
     background-size: cover;
 }
-#parallax-slow h2 {
-    margin: 0 auto;
-    width: 10rem;
-    padding: .5rem;
-    color: var(--clr-lightGrey);
+#parallax-slow button {
+    display: block;
     background-color: var(--clr-blk);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 25px auto;
     cursor: pointer;
+}
+#parallax-slow button a {
+    display: block;
+    color: var(--clr-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: -15px -25px;
 }
 .mobile-only {
     display: none;
