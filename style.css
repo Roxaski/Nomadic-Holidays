@@ -63,9 +63,8 @@ header h1 {
     top: 13rem;
     font-weight: 500;
     font-size: clamp(1.8rem, 3vw, 2.2rem);
-    background: var(--clr-darkGreen);
     border: solid 5px var(--clr-lightGrey);
-    padding: 2rem 3rem;
+    padding: 1.5rem 0;
     text-transform: uppercase;
     letter-spacing: 5px;
     z-index: 1;
@@ -99,6 +98,7 @@ header h1 {
 .polaroids .text #quote {
     font-size: clamp(.9rem, 3vw, 1rem);
     font-weight: 300;
+    line-height: 1.4;
 }
 .polaroids .text span {
     font-size: 1.4rem;
@@ -157,26 +157,29 @@ header h1 {
     padding: 15px 25px;
     margin: -15px -25px;
 }
-#parallax-slow-mobile {
+#parallax-slow-mobile,
+#small-mobile-only {
     display: none;
 }
 /*ACTIVITIES*/
 .title {
     position: relative;
     top: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
 }
 .title h2 {
     text-align: center;
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
     letter-spacing: .25px;
     text-transform: uppercase;
     font-weight: 500;
-    line-height: 2;
 }
 .title p {
     text-align: center;
     text-transform: capitalize;
     font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.7;
     letter-spacing: .25px;
 }
 .activities {
@@ -419,7 +422,7 @@ footer ul li a {
     #cloud-left-mobile,
     #cloud-right-mobile {
     display: block;
-}
+    }
     .polaroids .text {
         width: 100%;
         padding: 0 2rem;
@@ -433,6 +436,9 @@ footer ul li a {
         margin: 0 auto 20px;
         width: 100%;
     }
+    .activities {
+        width: 100%;
+    }
     .pricing-wrapper {
         background-attachment: scroll;
     }
@@ -443,5 +449,37 @@ footer ul li a {
     }
     footer ul li {
         margin: 20px auto;
+    }
+}
+@media screen and (max-width: 345px) {
+    #parallax-slow-mobile {
+        display: none;
+    }
+    #small-mobile-only {
+        display: block;
+        position: relative;
+    }
+    #small-mobile-only img {
+        width: 100%;
+        height: auto;
+    }
+    #small-mobile-only button {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--clr-blk);
+        border: none;
+        outline: var(--clr-lightGrey) 2px solid;
+        padding: .5rem 1rem;
+        cursor: pointer;
+    }
+    #small-mobile-only button a {
+        color: var(--clr-white);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
     }
 }
