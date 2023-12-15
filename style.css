@@ -67,6 +67,7 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-darkGreen);
+    padding-top: 3rem;
 }
 .polaroids .text {
     display: flex;
