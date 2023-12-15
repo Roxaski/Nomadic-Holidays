@@ -279,7 +279,7 @@ header h1 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    width: 95%;
+    width: 100%;
     border: var(--clr-lightGrey) 2px solid;
 }
 .contact-form .left-section {
@@ -295,11 +295,11 @@ header h1 {
 }
 .left-section .contact-details ul {
     list-style: none;
-    font-size: clamp(.85rem, 3vw, .9rem);
     letter-spacing: .5px;
 }
 .left-section .contact-details ul li {
     margin: 20px auto;
+    font-size: clamp(.85rem, 3vw, .9rem);
 }
 .left-section .contact-details ul li span {
     margin-left: .5rem;
@@ -416,6 +416,12 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 900px) {
+    .contact-form .left-section {
+        width: 45%;
+    }
+    .contact-form .right-section {
+        width: 55%;
+    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
