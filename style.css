@@ -483,3 +483,14 @@ footer ul li a {
         text-decoration: none;
     }
 }
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    header h1 {
+        top: 7.5rem;
+    }
+}
+@media screen and (max-width: 670px) and (orientation: landscape) {
+    header h1 {
+        top: 5.5rem;
+        padding: .75rem;
+    }
+}
