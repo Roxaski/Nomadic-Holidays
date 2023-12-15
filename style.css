@@ -225,6 +225,7 @@ header h1 {
     height: auto;
 }
 .pricing .card h3 {
+    font-size: clamp(1rem, 3vw, 1.1rem);
     text-transform: capitalize;
     font-weight: 500;
     letter-spacing: 1px;
@@ -232,25 +233,8 @@ header h1 {
     line-height: 2;
     margin: 10px auto 0;
 }
-.pricing .card h3::before {
-    content: '';
-    width: .75rem;
-    display: inline-block;
-    position: relative;
-    bottom: .3rem;
-    right: .4rem;
-    border-top: var(--clr-lightGrey) solid 2px;
-}
-.pricing .card h3::after {
-    content: '';
-    width: .75rem;
-    display: inline-block;
-    position: relative;
-    bottom: .3rem;
-    left: .4rem;
-    border-top: var(--clr-lightGrey) solid 2px;
-}
 .pricing .card h4 {
+    font-size: clamp(.95rem, 3vw, 1rem);
     text-align: center;
     text-transform: capitalize;
     font-weight: 500;
@@ -402,7 +386,7 @@ footer ul li a {
     cursor: pointer;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -422,8 +406,23 @@ footer ul li a {
     .pricing {
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem 0;
-        width: 85%;
-        margin: 0 auto;
+        width: 70%;
+    }
+    .pricing .card p {
+        padding: 0;
+        width: 90%;
+        margin: 15px auto;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 900px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        padding: 1rem 2rem;
+    }
+    footer ul li {
+        margin: 25px auto;
     }
 }
 @media screen and (max-width: 430px) {
@@ -442,5 +441,13 @@ footer ul li a {
     }
     .pricing-wrapper {
         background-attachment: scroll;
+    }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: left;
+        padding: 2rem 2rem;
+    }
+    footer ul li {
+        margin: 20px auto;
     }
 }
