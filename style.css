@@ -49,7 +49,15 @@ body {
     width: 100%;
     object-fit: cover;
 }
+#cloud-left-mobile,
+#cloud-right-mobile {
+    display: none;
+}
 /*HEADER*/
+header {
+    width: 50%;
+    text-align: center;
+}
 header h1 {
     position: relative;
     top: 13rem;
@@ -395,6 +403,9 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 900px) {
+    header {
+        width: 75%;
+    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
@@ -405,6 +416,10 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 430px) {
+    #cloud-left-mobile,
+    #cloud-right-mobile {
+    display: block;
+}
     .polaroids .text {
         width: 100%;
         padding: 0 2rem;
