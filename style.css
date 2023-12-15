@@ -83,6 +83,7 @@ header h1 {
     font-weight: 500;
 }
 .polaroids .text p {
+    font-size: clamp(1rem, 3vw, 1.025rem);
     font-weight: 400;
     line-height: 2;
     margin: 10px auto;
