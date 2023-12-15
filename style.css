@@ -54,7 +54,7 @@ header h1 {
     position: relative;
     top: 13rem;
     font-weight: 500;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
     background: var(--clr-darkGreen);
     border: solid 5px var(--clr-lightGrey);
     padding: 2rem 3rem;
@@ -67,7 +67,6 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-darkGreen);
-    padding-top: 3rem;
 }
 .polaroids .text {
     display: flex;
