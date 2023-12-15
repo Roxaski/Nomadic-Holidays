@@ -73,6 +73,7 @@ header h1 {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    color: var(--clr-lightGrey);
     width: 100%;
     padding: 2rem;
 }
@@ -87,9 +88,8 @@ header h1 {
     margin: 10px auto;
 }
 .text #quote {
-    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-size: clamp(.9rem, 3vw, 1rem);
     font-weight: 300;
-    color: var(--clr-lightGrey);
 }
 .text span {
     font-size: 1.4rem;
@@ -192,7 +192,7 @@ header h1 {
 /*PRICING*/
 .pricing-wrapper {
     background-image: url(./img/pricingBG.webp);
-    height: 100%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -431,5 +431,8 @@ footer ul li a {
     .text p {
         margin: 0 auto 20px;
         width: 100%;
+    }
+    .pricing-wrapper {
+        background-attachment: scroll;
     }
 }
