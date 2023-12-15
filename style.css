@@ -400,7 +400,7 @@ footer ul li a {
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 900px) {
-    .container {
+    .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
     #parallax-slow {
@@ -425,16 +425,16 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 430px) {
-    .container .text {
+    .polaroids .text {
         width: 100%;
         padding: 0 2rem;
     }
-    .text h2 {
+    .polaroids .text h2 {
         text-transform: capitalize;
         letter-spacing: 1px;
         font-weight: 500;
     }
-    .text p {
+    .polaroids .text p {
         margin: 0 auto 20px;
         width: 100%;
     }
