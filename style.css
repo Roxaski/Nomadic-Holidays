@@ -62,7 +62,7 @@ header h1 {
     letter-spacing: 5px;
     z-index: 1;
 }
-/*INFORMATION*/
+/*POLAROIDS*/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -416,5 +416,20 @@ footer ul li a {
         padding: 2rem 0;
         width: 85%;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width: 430px) {
+    .container .text {
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .text h2 {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .text p {
+        margin: 0 auto 20px;
+        width: 100%;
     }
 }
