@@ -269,56 +269,26 @@ header h1 {
 }
 /*CONTACT FORM*/
 .form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 4rem;
 }
 .contact-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     width: 100%;
     border: var(--clr-lightGrey) 2px solid;
 }
-.contact-form .left-section {
-    width: 35%;
-    height: 100%;
+.left-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .75rem;
 }
-.left-section h5 {
-    font-weight: 400;
-    font-size: clamp(1rem, 3vw, 1.1rem);
-    color: var(--clr-lightGrey);
-    letter-spacing: .5px;
-    margin: 5px auto;
-}
-.left-section .contact-details ul {
-    list-style: none;
-    letter-spacing: .5px;
-}
-.left-section .contact-details ul li {
-    margin: 20px auto;
-    font-size: clamp(.85rem, 3vw, .9rem);
-}
-.left-section .contact-details ul li span {
-    margin-left: .5rem;
-    color: var(--clr-grey);
-}
-.left-section .social-media h5 {
-    margin: 15px auto;
-}
-.left-section .social-media .fa-brands {
-    display: inline-block;
-    margin-right: 1.75rem;
-    color: var(--clr-grey);
-    cursor: pointer;
-}
-.contact-form .right-section {
-    width: 65%;
+.right-section {
+    width: 95%;
 }
 .right-section h5 {
-    font-size: clamp(.9rem, 3vw, .95rem);
+    font-size: clamp(.8rem, 3vw, .9rem);
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .75px;
@@ -386,7 +356,7 @@ footer ul li a {
     cursor: pointer;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -414,14 +384,14 @@ footer ul li a {
         margin: 15px auto;
         font-weight: 300;
     }
+    .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form button {
+        margin: 15px auto 25px;
+    }
 }
 @media screen and (max-width: 900px) {
-    .contact-form .left-section {
-        width: 45%;
-    }
-    .contact-form .right-section {
-        width: 55%;
-    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
