@@ -49,6 +49,10 @@ body {
     width: 100%;
     object-fit: cover;
 }
+#cloud-left-mobile,
+#cloud-right-mobile {
+    display: none;
+}
 h1 {
     display: flex;
     align-items: center;
@@ -65,9 +69,6 @@ h1 {
     border: var(--clr-lightGrey) 3px solid;
     padding: 1.25rem;
     z-index: 1;
-}
-.mobile-only {
-    display: none;
 }
 /*POLAROIDS*/
 .polaroids {
@@ -432,7 +433,8 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 430px) {
-    .mobile-only img {
+    #cloud-left-mobile,
+    #cloud-right-mobile {
     display: block;
     }
     .polaroids .text {
@@ -462,7 +464,4 @@ footer ul li a {
     footer ul li {
         margin: 20px auto;
     }
-}
-@media screen and (max-width: 345px) {
-    
 }
