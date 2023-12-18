@@ -155,7 +155,7 @@ h1 {
     padding: 15px 25px;
     margin: -15px -25px;
 }
-.mobile-bg {
+#mobile-bg button {
     display: none;
 }
 /*ACTIVITIES*/
@@ -372,6 +372,32 @@ footer ul li a {
     #parallax-slow {
         display: none;
     }
+    #mobile-bg {
+        padding: 2rem;
+        background-image: url(./img/mountain_lake.webp);
+        background-position: bottom;
+        position: relative;
+        background-size: cover;
+    }
+    #mobile-bg button {
+        display: block;
+        background-color: var(--clr-blk);
+        border: none;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 25px auto;
+        cursor: pointer;
+    }
+    #mobile-bg button a {
+        display: block;
+        color: var(--clr-white);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-decoration: none;
+        padding: 15px 25px;
+        margin: -15px -25px;
+    }
     .activities {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -438,29 +464,5 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 345px) {
-    #mobile-bg {
-        padding: 2rem;
-        background-image: url(./img/mountain_lake.webp);
-        position: relative;
-        background-size: cover;
-    }
-    #mobile-bg button {
-        display: block;
-        background-color: var(--clr-blk);
-        border: none;
-        border-radius: 5px;
-        padding: 15px 25px;
-        margin: 25px auto;
-        cursor: pointer;
-    }
-    #mobile-bg button a {
-        display: block;
-        color: var(--clr-white);
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: .5px;
-        text-decoration: none;
-        padding: 15px 25px;
-        margin: -15px -25px;
-    }
+    
 }
