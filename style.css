@@ -32,9 +32,6 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
-.wrapper {
-    max-width: 2560px;
-}
 /*PARALLAX HERO*/
 .parallax {
     height: 100vh;
@@ -56,20 +53,21 @@ body {
 #cloud-right-mobile {
     display: none;
 }
-/*HEADER*/
-header {
-    width: 50%;
-    text-align: center;
-}
-header h1 {
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    top: 13rem;
-    font-weight: 500;
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-    border: solid 5px var(--clr-lightGrey);
-    padding: 1.5rem 0;
+    top: 25%;
+    width: 450px;
+    max-width: 80%;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background: var(--clr-darkGreen);
+    border: var(--clr-lightGrey) 3px solid;
+    padding: 1.25rem;
     z-index: 1;
 }
 /*POLAROIDS*/
@@ -139,8 +137,7 @@ header h1 {
     position: relative;
     background-size: cover;
 }
-#parallax-slow button,
-#parallax-slow-mobile button {
+#parallax-slow button {
     display: block;
     background-color: var(--clr-blk);
     border: none;
@@ -149,8 +146,7 @@ header h1 {
     margin: 25px auto;
     cursor: pointer;
 }
-#parallax-slow button a,
-#parallax-slow-mobile button a {
+#parallax-slow button a {
     display: block;
     color: var(--clr-white);
     font-weight: 500;
@@ -160,8 +156,7 @@ header h1 {
     padding: 15px 25px;
     margin: -15px -25px;
 }
-#parallax-slow-mobile,
-#small-mobile-only {
+#mobile-bg button {
     display: none;
 }
 /*ACTIVITIES*/
@@ -378,12 +373,31 @@ footer ul li a {
     #parallax-slow {
         display: none;
     }
-    #parallax-slow-mobile {
-        display: block;
-        padding: 1rem;
+    #mobile-bg {
+        padding: 2rem;
         background-image: url(./img/mountain_lake.webp);
+        background-position: bottom;
         position: relative;
         background-size: cover;
+    }
+    #mobile-bg button {
+        display: block;
+        background-color: var(--clr-blk);
+        border: none;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 25px auto;
+        cursor: pointer;
+    }
+    #mobile-bg button a {
+        display: block;
+        color: var(--clr-white);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        text-decoration: none;
+        padding: 15px 25px;
+        margin: -15px -25px;
     }
     .activities {
         grid-template-columns: repeat(1, 1fr);
@@ -409,9 +423,6 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 900px) {
-    header {
-        width: 75%;
-    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
@@ -452,48 +463,5 @@ footer ul li a {
     }
     footer ul li {
         margin: 20px auto;
-    }
-}
-@media screen and (max-width: 345px) {
-    #parallax-slow-mobile {
-        display: none;
-    }
-    #small-mobile-only {
-        display: block;
-        position: relative;
-    }
-    #small-mobile-only img {
-        width: 100%;
-        height: auto;
-    }
-    #small-mobile-only button {
-        display: inline-block;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: var(--clr-blk);
-        border: none;
-        outline: var(--clr-lightGrey) 2px solid;
-        padding: .5rem 1rem;
-        cursor: pointer;
-    }
-    #small-mobile-only button a {
-        color: var(--clr-white);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-}
-@media screen and (max-width: 950px) and (orientation: landscape) {
-    header h1 {
-        top: 7.5rem;
-    }
-}
-@media screen and (max-width: 670px) and (orientation: landscape) {
-    header h1 {
-        top: 5.5rem;
-        padding: .75rem;
     }
 }
