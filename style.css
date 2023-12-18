@@ -32,6 +32,9 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
+.wrapper {
+    max-width: 80rem;
+}
 /*PARALLAX HERO*/
 .parallax {
     height: 100vh;
@@ -53,7 +56,7 @@ body {
 #cloud-right-mobile {
     display: none;
 }
-h1 {
+.parallax h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +72,9 @@ h1 {
     border: var(--clr-lightGrey) 3px solid;
     padding: 1.25rem;
     z-index: 1;
+}
+.mobile-graphic {
+    display: none;
 }
 /*POLAROIDS*/
 .polaroids {
@@ -324,7 +330,7 @@ h1 {
     padding: 5px 40px;
     border: none;
     border-radius: 5px;
-    margin: 2px auto 0;
+    margin: 0 auto;
     transition: 250ms ease-in-out;
     cursor: pointer;
 }
@@ -367,6 +373,42 @@ footer ul li a {
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1024px) {
+    .parallax {
+        display: none;
+    }
+    .mobile-graphic {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        filter: brightness(95%);
+        z-index: -1;
+    }
+    .mobile-graphic img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .mobile-graphic h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+        width: 450px;
+        max-width: 80%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        background: var(--clr-darkGreen);
+        border: var(--clr-lightGrey) 3px solid;
+        padding: 1.25rem;
+        z-index: 1;
+    }
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
