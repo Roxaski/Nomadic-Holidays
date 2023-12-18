@@ -9,6 +9,3 @@ Images used :
 - [pexels](https://pexels.com/)
 
 Any feedback is greatly appreciated!
-=======
-# Nomadic-Holidays
->>>>>>> dev
