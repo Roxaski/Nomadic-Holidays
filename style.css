@@ -58,9 +58,10 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10%;
+    top: 25%;
     width: 450px;
-    max-width: 85%;
+    max-width: 80%;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -406,9 +407,6 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 900px) {
-    header {
-        width: 75%;
-    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
@@ -481,16 +479,5 @@ footer ul li a {
         text-transform: uppercase;
         letter-spacing: 1px;
         text-decoration: none;
-    }
-}
-@media screen and (max-width: 950px) and (orientation: landscape) {
-    header h1 {
-        top: 7.5rem;
-    }
-}
-@media screen and (max-width: 670px) and (orientation: landscape) {
-    header h1 {
-        top: 5.5rem;
-        padding: .75rem;
     }
 }
