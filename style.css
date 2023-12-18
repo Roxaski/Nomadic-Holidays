@@ -67,6 +67,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 500;
     background: var(--clr-darkGreen);
     border: var(--clr-lightGrey) 3px solid;
@@ -92,6 +93,7 @@ body {
     padding: 2rem;
 }
 .polaroids .text h2 {
+    line-height: 1.9;
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 500;
@@ -296,7 +298,8 @@ body {
 .left-section img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
     padding: .75rem;
 }
 .right-section {
@@ -324,24 +327,6 @@ body {
 .right-section .message-box textarea {
     min-height: 90px;
     resize: none;
-}
-.right-section button {
-    display: block;
-    padding: 5px 40px;
-    border: none;
-    border-radius: 5px;
-    margin: 0 auto;
-    transition: 250ms ease-in-out;
-    cursor: pointer;
-}
-.right-section button a {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--clr-blk);
-    text-decoration: none;
-}
-.right-section button:hover {
-    background-color: var(--clr-lightGreen);
 }
 /*FOOTER*/
 footer {
@@ -372,7 +357,7 @@ footer ul li a {
     cursor: pointer;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .parallax {
         display: none;
     }
@@ -403,6 +388,7 @@ footer ul li a {
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
         font-weight: 500;
         background: var(--clr-darkGreen);
         border: var(--clr-lightGrey) 3px solid;
@@ -447,7 +433,7 @@ footer ul li a {
     .pricing {
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem 0;
-        width: 70%;
+        width: 50%;
     }
     .pricing .card p {
         padding: 0;
@@ -464,7 +450,11 @@ footer ul li a {
         margin: 15px auto 25px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
+    .contact-form {
+        width: 85%;
+        padding: 1rem;
+    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: left;
@@ -497,6 +487,12 @@ footer ul li a {
     }
     .pricing-wrapper {
         background-attachment: scroll;
+    }
+    .pricing {
+        width: 85%;
+    }
+    .form-container {
+        padding: 2rem;
     }
     footer {
         grid-template-columns: repeat(1, 1fr);
