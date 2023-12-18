@@ -49,10 +49,6 @@ body {
     width: 100%;
     object-fit: cover;
 }
-#cloud-left-mobile,
-#cloud-right-mobile {
-    display: none;
-}
 h1 {
     display: flex;
     align-items: center;
@@ -69,6 +65,9 @@ h1 {
     border: var(--clr-lightGrey) 3px solid;
     padding: 1.25rem;
     z-index: 1;
+}
+.mobile-only {
+    display: none;
 }
 /*POLAROIDS*/
 .polaroids {
@@ -137,8 +136,7 @@ h1 {
     position: relative;
     background-size: cover;
 }
-#parallax-slow button,
-#parallax-slow-mobile button {
+#parallax-slow button {
     display: block;
     background-color: var(--clr-blk);
     border: none;
@@ -147,8 +145,7 @@ h1 {
     margin: 25px auto;
     cursor: pointer;
 }
-#parallax-slow button a,
-#parallax-slow-mobile button a {
+#parallax-slow button a {
     display: block;
     color: var(--clr-white);
     font-weight: 500;
@@ -158,8 +155,7 @@ h1 {
     padding: 15px 25px;
     margin: -15px -25px;
 }
-#parallax-slow-mobile,
-#small-mobile-only {
+.mobile-bg {
     display: none;
 }
 /*ACTIVITIES*/
@@ -376,13 +372,6 @@ footer ul li a {
     #parallax-slow {
         display: none;
     }
-    #parallax-slow-mobile {
-        display: block;
-        padding: 1rem;
-        background-image: url(./img/mountain_lake.webp);
-        position: relative;
-        background-size: cover;
-    }
     .activities {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -417,8 +406,7 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 430px) {
-    #cloud-left-mobile,
-    #cloud-right-mobile {
+    .mobile-only img {
     display: block;
     }
     .polaroids .text {
@@ -450,34 +438,29 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 345px) {
-    #parallax-slow-mobile {
-        display: none;
-    }
-    #small-mobile-only {
-        display: block;
+    #mobile-bg {
+        padding: 2rem;
+        background-image: url(./img/mountain_lake.webp);
         position: relative;
+        background-size: cover;
     }
-    #small-mobile-only img {
-        width: 100%;
-        height: auto;
-    }
-    #small-mobile-only button {
-        display: inline-block;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    #mobile-bg button {
+        display: block;
         background-color: var(--clr-blk);
         border: none;
-        outline: var(--clr-lightGrey) 2px solid;
-        padding: .5rem 1rem;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 25px auto;
         cursor: pointer;
     }
-    #small-mobile-only button a {
+    #mobile-bg button a {
+        display: block;
         color: var(--clr-white);
+        font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
         text-decoration: none;
+        padding: 15px 25px;
+        margin: -15px -25px;
     }
 }
