@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Whisper&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-blk: #212121;
+    --clr-white: #ebe7e7;
+    --clr-grey: #d0c8c8;
+    --clr-lightGrey: #e2e2e2;
+    --clr-green: #9a8a46;
+    --clr-lightGreen: #a9ba80;
+    --clr-midGreen: #323826;
+    --clr-darkGreen: #262a18;
+    --clr-darkerGreen: #31381e;
+}
+body {
+    background-color: var(--clr-darkGreen);
+    font-family: 'Poppins', sans-serif;
+    color: var(--clr-white);
+    cursor: default;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--clr-white);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-green);
+    border-radius: 5px;
+}
+.wrapper {
+    max-width: 2560px;
+}
+/*PARALLAX HERO*/
+.parallax {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: brightness(95%);
+    z-index: -1;
+}
+.parallax img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#cloud-left-mobile,
+#cloud-right-mobile {
+    display: none;
+}
+/*HEADER*/
+header {
+    width: 50%;
+    text-align: center;
+}
+header h1 {
+    position: relative;
+    top: 13rem;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    border: solid 5px var(--clr-lightGrey);
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+/*POLAROIDS*/
+.polaroids {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--clr-darkGreen);
+}
+.polaroids .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--clr-lightGrey);
+    width: 100%;
+    padding: 2rem;
+}
+.polaroids .text h2 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.polaroids .text p {
+    font-size: clamp(1rem, 3vw, 1.025rem);
+    font-weight: 400;
+    line-height: 2;
+    margin: 10px auto;
+}
+.polaroids .text #quote {
+    font-size: clamp(.9rem, 3vw, 1rem);
+    font-weight: 300;
+    line-height: 1.4;
+}
+.polaroids .text span {
+    font-size: 1.4rem;
+    position: relative;
+    top: .3rem;
+}
+.polaroids .img-wrapper {
+    padding: 2rem;
+    position: relative;
+}
+.polaroids .img-wrapper img {
+    width: 100%;
+    height: auto;
+    border: var(--clr-white) solid 5px;
+    border-bottom: 60px solid var(--clr-white);
+}
+.polaroids .img-wrapper p {
+    position: absolute;
+    display: inline-block;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    color: var(--clr-blk);
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: clamp(1.8rem, 3vw, 2rem);
+    font-family: 'Whisper', cursive;
+    font-weight: 800;
+}
+/*BOOK NOW PARALLAX*/
+#parallax-slow {
+    padding: 2rem;
+    background-image: url(./img/mountain_lake.webp);
+    position: relative;
+    background-size: cover;
+}
+#parallax-slow button,
+#parallax-slow-mobile button {
+    display: block;
+    background-color: var(--clr-blk);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 25px auto;
+    cursor: pointer;
+}
+#parallax-slow button a,
+#parallax-slow-mobile button a {
+    display: block;
+    color: var(--clr-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: -15px -25px;
+}
+#parallax-slow-mobile,
+#small-mobile-only {
+    display: none;
+}
+/*ACTIVITIES*/
+.title {
+    position: relative;
+    top: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.title h2 {
+    text-align: center;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.title p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.7;
+    letter-spacing: .25px;
+}
+.activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+    width: 85%;
+    margin: 25px auto;
+}
+.activities .card {
+    padding: 1rem;
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-darkerGreen);
+    border: var(--clr-lightGrey) solid 2px;
+}
+.activities .card .fa-solid {
+    font-size: 1.4rem;
+}
+.activities .card h3 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: .5rem auto .25rem;
+}
+.activities .card p  {
+    color: var(--clr-lightGrey);
+    font-size: clamp(.95rem, 3vw, 1rem);
+}
+/*PRICING*/
+.pricing-wrapper {
+    background-image: url(./img/pricingBG.webp);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 975px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.pricing .card {
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-darkGreen);
+    border: solid 2px var(--clr-lightGrey);
+}
+.pricing .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.pricing .card h3 {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 2;
+    margin: 10px auto 0;
+}
+.pricing .card h4 {
+    font-size: clamp(.95rem, 3vw, 1rem);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .75px;
+}
+.pricing .card p {
+    padding: .75rem;
+    width: 100%;
+    font-weight: 300;
+}
+.pricing button {
+    display: block;
+    background-color: var(--clr-lightGrey);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 25px auto;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+.pricing button a {
+    display: block;
+    color: var(--clr-blk);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: -5px -20px;
+}
+.pricing button:hover {
+    background-color: var(--clr-lightGreen);
+}
+/*CONTACT FORM*/
+.form-container {
+    padding: 4rem;
+}
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%;
+    border: var(--clr-lightGrey) 2px solid;
+}
+.left-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .75rem;
+}
+.right-section {
+    width: 95%;
+}
+.right-section h5 {
+    font-size: clamp(.8rem, 3vw, .9rem);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .75px;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin: 13px auto;
+}
+.right-section .input-box input,
+.right-section .message-box textarea {
+    width: 100%;
+    height: 40px;
+    margin: 3px auto;
+    border: none;
+    padding: 5px 5px;
+    background-color: var(--clr-lightGrey);
+}
+.right-section .message-box textarea {
+    min-height: 90px;
+    resize: none;
+}
+.right-section button {
+    display: block;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 2px auto 0;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+.right-section button a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--clr-blk);
+    text-decoration: none;
+}
+.right-section button:hover {
+    background-color: var(--clr-lightGreen);
+}
+/*FOOTER*/
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: var(--clr-midGreen);
+}
+footer h6 {
+    font-size: clamp(.95rem, 3vw, 1rem);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+footer ul li {
+    font-size: clamp(.8rem, 3vw, .85rem);
+    text-transform: capitalize;
+    letter-spacing: .75px;
+    list-style: none;
+    margin: 10px auto;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--clr-lightGrey);
+    cursor: pointer;
+}
+/*MEDIA QUERY'S*/
+@media screen and (max-width: 1024px) {
+    .polaroids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #parallax-slow {
+        display: none;
+    }
+    #parallax-slow-mobile {
+        display: block;
+        padding: 1rem;
+        background-image: url(./img/mountain_lake.webp);
+        position: relative;
+        background-size: cover;
+    }
+    .activities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricing {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 0;
+        width: 70%;
+    }
+    .pricing .card p {
+        padding: 0;
+        width: 90%;
+        margin: 15px auto;
+        font-weight: 300;
+    }
+    .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .contact-form button {
+        margin: 15px auto 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    header {
+        width: 75%;
+    }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        padding: 1rem 2rem;
+    }
+    footer ul li {
+        margin: 25px auto;
+    }
+}
+@media screen and (max-width: 430px) {
+    #cloud-left-mobile,
+    #cloud-right-mobile {
+    display: block;
+    }
+    .polaroids .text {
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .polaroids .text h2 {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .polaroids .text p {
+        margin: 0 auto 20px;
+        width: 100%;
+    }
+    .activities {
+        width: 100%;
+    }
+    .pricing-wrapper {
+        background-attachment: scroll;
+    }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: left;
+        padding: 2rem 2rem;
+    }
+    footer ul li {
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 345px) {
+    #parallax-slow-mobile {
+        display: none;
+    }
+    #small-mobile-only {
+        display: block;
+        position: relative;
+    }
+    #small-mobile-only img {
+        width: 100%;
+        height: auto;
+    }
+    #small-mobile-only button {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--clr-blk);
+        border: none;
+        outline: var(--clr-lightGrey) 2px solid;
+        padding: .5rem 1rem;
+        cursor: pointer;
+    }
+    #small-mobile-only button a {
+        color: var(--clr-white);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    header h1 {
+        top: 7.5rem;
+    }
+}
+@media screen and (max-width: 670px) and (orientation: landscape) {
+    header h1 {
+        top: 5.5rem;
+        padding: .75rem;
+    }
+}
