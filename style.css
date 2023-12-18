@@ -53,20 +53,20 @@ body {
 #cloud-right-mobile {
     display: none;
 }
-/*HEADER*/
-header {
-    width: 50%;
-    text-align: center;
-}
-header h1 {
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    top: 13rem;
-    font-weight: 500;
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-    border: solid 5px var(--clr-lightGrey);
-    padding: 1.5rem 0;
+    top: 10%;
+    width: 450px;
+    max-width: 85%;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background: var(--clr-darkGreen);
+    border: var(--clr-lightGrey) 3px solid;
+    padding: 1.25rem;
     z-index: 1;
 }
 /*POLAROIDS*/
