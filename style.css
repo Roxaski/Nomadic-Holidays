@@ -34,9 +34,6 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
-.content-wrapper {
-    max-width: 110rem;
-}
 /*PARALLAX HERO*/
 .parallax {
     height: 100vh;
@@ -74,6 +71,10 @@ body {
 }
 .mobile-graphic {
     display: none;
+}
+/*CONTENT WRAPPER*/
+.content-wrapper {
+    max-width: 110rem;
 }
 /*POLAROIDS*/
 .polaroids {
