@@ -34,8 +34,8 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
-.wrapper {
-    max-width: 80rem;
+.content-wrapper {
+    max-width: 110rem;
 }
 /*PARALLAX HERO*/
 .parallax {
