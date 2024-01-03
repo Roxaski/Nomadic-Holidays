@@ -246,7 +246,7 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.8;
     margin: 10px auto 0;
 }
 .pricing .card h4 {
@@ -263,16 +263,18 @@ body {
 }
 .pricing button {
     display: block;
+    color: var(--clr-blk);
     background-color: var(--clr-lightGrey);
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
     margin: 25px auto;
-    transition: 250ms ease-in-out;
+    transition: 250ms ease-out;
     cursor: pointer;
 }
 .pricing button:hover {
-    background-color: var(--clr-lightGreen);
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-green);
 }
 /*CONTACT FORM*/
 .form-container {
