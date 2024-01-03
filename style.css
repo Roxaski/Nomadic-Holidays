@@ -7,9 +7,7 @@
 :root {
     --clr-blk: #212121;
     --clr-white: #ebe7e7;
-    --clr-grey: #d0c8c8;
     --clr-lightGrey: #e2e2e2;
-    --clr-green: #9a8a46;
     --clr-lightGreen: #a9ba80;
     --clr-midGreen: #323826;
     --clr-darkGreen: #262a18;
@@ -51,10 +49,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-#cloud-left-mobile,
-#cloud-right-mobile {
-    display: none;
 }
 .parallax h1 {
     display: flex;
@@ -468,10 +462,6 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 430px) {
-    #cloud-left-mobile,
-    #cloud-right-mobile {
-    display: block;
-    }
     .polaroids .text {
         width: 100%;
         padding: 0 2rem;
