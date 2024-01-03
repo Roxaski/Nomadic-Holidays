@@ -29,7 +29,6 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     background-clip: padding-box;
-    border-top: .75px solid transparent;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
     background-color: var(--clr-green);
