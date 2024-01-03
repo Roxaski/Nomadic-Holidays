@@ -370,8 +370,6 @@ footer ul li a {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-        top: 25%;
         width: 450px;
         max-width: 80%;
         text-align: center;
@@ -381,7 +379,7 @@ footer ul li a {
         font-weight: 500;
         background: var(--clr-darkGreen);
         border: var(--clr-lightGrey) 3px solid;
-        padding: 1.25rem;
+        padding: 1.5rem;
         z-index: 1;
     }
     .polaroids {
