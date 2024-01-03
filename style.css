@@ -270,15 +270,6 @@ body {
     transition: 250ms ease-in-out;
     cursor: pointer;
 }
-.pricing button a {
-    display: block;
-    color: var(--clr-blk);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    text-decoration: none;
-    padding: 5px 20px;
-    margin: -5px -20px;
-}
 .pricing button:hover {
     background-color: var(--clr-lightGreen);
 }
