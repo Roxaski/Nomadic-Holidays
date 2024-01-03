@@ -7,6 +7,7 @@
 :root {
     --clr-blk: #212121;
     --clr-white: #ebe7e7;
+    --clr-green: #686c43;
     --clr-lightGrey: #e2e2e2;
     --clr-lightGreen: #a9ba80;
     --clr-midGreen: #323826;
@@ -27,6 +28,10 @@ body {
     background-color: var(--clr-white);
 }
 ::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border-top: .75px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
     background-color: var(--clr-green);
     border-radius: 5px;
 }
