@@ -451,6 +451,9 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 950px) {
+    .polaroids .text #quote {
+        display: none;
+    }
     .contact-form {
         width: 85%;
         padding: 1rem;
