@@ -215,7 +215,7 @@ body {
 }
 /*RENTAL CABINS*/
 .cabin_rental-wrapper {
-    background-image: url(./img/pricingBG.webp);
+    background-image: url(./img/cabin_rentalBG.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -441,6 +441,9 @@ footer ul li a {
         width: 95%;
         margin: 50px auto;
     }
+    .cabin_rental-wrapper {
+        background-attachment: scroll;
+    }
     .cabin_rental {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -519,6 +522,6 @@ footer ul li a {
         z-index: 1;
     }
     .form-container {
-        padding: 1.5rem;
+        width: 100%;
     }
 }
