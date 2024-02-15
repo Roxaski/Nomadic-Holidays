@@ -313,12 +313,30 @@ body {
     height: 40px;
     margin: 3px auto;
     border: none;
+    border-radius: 2px;
     padding: 5px 5px;
     background-color: var(--clr-lightGrey);
 }
 .right-section .message-box textarea {
     min-height: 90px;
     resize: none;
+}
+.right-section button {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    padding: .25rem 1rem;
+    letter-spacing: 1px;
+    background-color: var(--clr-lightGrey);
+    color: var(--clr-blk);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: 250ms ease-out;
+}
+.right-section button:hover {
+    color: var(--clr-lightGrey);
+    background-color: var(--clr-green);
 }
 /*FOOTER*/
 footer {
@@ -435,9 +453,6 @@ footer ul li a {
         grid-template-columns: repeat(1, 1fr);
         max-width: 800px;
         margin: 0 auto;
-    }
-    .contact-form button {
-        margin: 15px auto 25px;
     }
 }
 @media screen and (max-width: 950px) {
