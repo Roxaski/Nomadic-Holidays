@@ -241,19 +241,19 @@ body {
     height: auto;
 }
 .cabin_rental .card h3 {
-    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1px;
     text-align: center;
     line-height: 1.8;
     margin: 10px auto 0;
 }
 .cabin_rental .card h4 {
-    font-size: clamp(.95rem, 3vw, 1rem);
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     text-align: center;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .75px;
 }
 .cabin_rental .card p {
