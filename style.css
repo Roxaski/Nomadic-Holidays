@@ -74,7 +74,7 @@ body {
 }
 /*CONTENT WRAPPER*/
 .content-wrapper {
-    max-width: 110rem;
+    max-width: 86rem;
 }
 /*POLAROIDS*/
 .polaroids {
@@ -189,10 +189,9 @@ body {
 }
 .activities {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 2rem;
     gap: 1rem;
-    width: 85%;
     margin: 25px auto;
 }
 .activities .card {
@@ -214,33 +213,34 @@ body {
     color: var(--clr-lightGrey);
     font-size: clamp(.95rem, 3vw, 1rem);
 }
-/*PRICING*/
-.pricing-wrapper {
+/*RENTAL CABINS*/
+.cabin_rental-wrapper {
     background-image: url(./img/pricingBG.webp);
-    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
-.pricing {
+.cabin_rental {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    width: 975px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
     margin: 0 auto;
+    gap: 1rem;
     padding: 2rem;
 }
-.pricing .card {
+.cabin_rental .card {
+    width: 100%;
+    height: auto;
     color: var(--clr-lightGrey);
     background-color: var(--clr-darkGreen);
     border: solid 2px var(--clr-lightGrey);
 }
-.pricing .card img {
+.cabin_rental .card img {
     display: block;
     width: 100%;
     height: auto;
 }
-.pricing .card h3 {
+.cabin_rental .card h3 {
     font-size: clamp(1rem, 3vw, 1.1rem);
     text-transform: capitalize;
     font-weight: 500;
@@ -249,19 +249,19 @@ body {
     line-height: 1.8;
     margin: 10px auto 0;
 }
-.pricing .card h4 {
+.cabin_rental .card h4 {
     font-size: clamp(.95rem, 3vw, 1rem);
     text-align: center;
     text-transform: capitalize;
     font-weight: 500;
     letter-spacing: .75px;
 }
-.pricing .card p {
+.cabin_rental .card p {
     padding: .75rem;
     width: 100%;
     font-weight: 300;
 }
-.pricing button {
+.cabin_rental button {
     display: block;
     color: var(--clr-blk);
     background-color: var(--clr-lightGrey);
@@ -272,26 +272,26 @@ body {
     transition: 250ms ease-out;
     cursor: pointer;
 }
-.pricing button:hover {
+.cabin_rental button:hover {
     color: var(--clr-lightGrey);
     background-color: var(--clr-green);
 }
 /*CONTACT FORM*/
 .form-container {
-    padding: 4rem;
+    padding: 2rem;
 }
 .contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     width: 100%;
+    height: auto;
     border: var(--clr-lightGrey) 2px solid;
 }
 .left-section img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
     padding: .75rem;
 }
 .right-section {
@@ -342,10 +342,10 @@ body {
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    justify-items: flex-start;
     width: 100%;
     height: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     background-color: var(--clr-midGreen);
 }
 footer h6 {
@@ -367,7 +367,7 @@ footer ul li a {
     cursor: pointer;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 986px) {
     .parallax {
         display: none;
     }
@@ -436,77 +436,89 @@ footer ul li a {
         margin: -15px -25px;
     }
     .activities {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .pricing {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2rem 0;
-        width: 50%;
-    }
-    .pricing .card p {
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
-        width: 90%;
-        margin: 15px auto;
-        font-weight: 300;
+        width: 95%;
+        margin: 50px auto;
+    }
+    .cabin_rental {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        padding: 1rem 0;
     }
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
-        max-width: 800px;
-        margin: 0 auto;
     }
 }
-@media screen and (max-width: 950px) {
-    .polaroids .text #quote {
-        display: none;
+@media screen and (max-width: 865px) {
+    .activities {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 .8rem;
+        margin: 50px auto;
     }
-    .contact-form {
-        width: 85%;
-        padding: 1rem;
+    .cabin_rental {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem .8rem;
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
-        padding: 1rem 2rem;
-    }
-    footer ul li {
-        margin: 25px auto;
+        gap: 1rem 0;
     }
 }
-@media screen and (max-width: 430px) {
-    .polaroids .text {
-        width: 100%;
-        padding: 0 2rem;
-    }
-    .polaroids .text h2 {
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        font-weight: 500;
-    }
-    .polaroids .text p {
-        margin: 0 auto 20px;
-        width: 100%;
-    }
+@media screen and (max-width: 473px) {
     .activities {
-        width: 100%;
+        padding: 0 .2rem;
     }
-    .pricing-wrapper {
-        background-attachment: scroll;
-    }
-    .pricing {
-        width: 85%;
-    }
-    .contact-form {
-        width: 100%;
+    .cabin_rental {
+        padding: 2rem .2rem;
     }
     .form-container {
-        padding: 2rem;
+        padding: 1rem;
     }
     footer {
         grid-template-columns: repeat(1, 1fr);
-        justify-items: left;
+        gap: 1rem 0;
         padding: 2rem 2rem;
     }
-    footer ul li {
-        margin: 20px auto;
+}
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+    .parallax {
+        display: none;
+    }
+    .mobile-graphic {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        filter: brightness(95%);
+        z-index: -1;
+    }
+    .mobile-graphic img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .mobile-graphic h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        max-width: 80%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
+        font-weight: 500;
+        background: var(--clr-darkGreen);
+        border: var(--clr-lightGrey) 3px solid;
+        padding: 1.5rem;
+        z-index: 1;
+    }
+    .form-container {
+        padding: 1.5rem;
     }
 }
