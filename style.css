@@ -104,8 +104,11 @@ body {
     margin: 10px auto;
 }
 .polaroids .text #quote {
+    width: 100%;
     font-size: clamp(.9rem, 3vw, 1rem);
     font-weight: 300;
+    font-style: italic;
+    text-align: center;
     line-height: 1.4;
 }
 .polaroids .text span {
@@ -196,8 +199,8 @@ body {
 }
 .activities .card {
     padding: 1rem;
-    color: var(--clr-lightGrey);
-    background-color: var(--clr-darkerGreen);
+    background: rgb(104,108,67);
+    background: linear-gradient(145deg, rgba(104,108,67,1) 0%, rgba(50,56,38,1) 19%); 
     border: var(--clr-lightGrey) solid 2px;
 }
 .activities .card .fa-solid {
@@ -222,15 +225,15 @@ body {
 }
 .cabin_rental {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45rem;
     margin: 0 auto;
     gap: 1rem;
     padding: 2rem;
 }
 .cabin_rental .card {
     width: 100%;
-    height: auto;
+    height: 100%;
     color: var(--clr-lightGrey);
     background-color: var(--clr-darkGreen);
     border: solid 2px var(--clr-lightGrey);
@@ -240,26 +243,41 @@ body {
     width: 100%;
     height: auto;
 }
+.cabin_rental .card .icons {
+    line-height: 2.3;
+}
+.cabin_rental .card .icons span {
+    font-size: clamp(.6rem, 3vw, .7rem);
+    letter-spacing: 5px;
+}
+.cabin_rental .card .contents {
+    padding: .75rem;
+}
 .cabin_rental .card h3 {
     font-size: clamp(1.1rem, 3vw, 1.2rem);
     text-transform: capitalize;
     font-weight: 400;
     letter-spacing: 1px;
-    text-align: center;
-    line-height: 1.8;
-    margin: 10px auto 0;
+    text-align: left;
 }
 .cabin_rental .card h4 {
     font-size: clamp(1.1rem, 3vw, 1.2rem);
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
+    line-height: 2;
     font-weight: 400;
-    letter-spacing: .75px;
 }
 .cabin_rental .card p {
-    padding: .75rem;
-    width: 100%;
+    width: 99%;
+    height: 6rem;
+    margin: 15px auto;
+    padding-right: 1rem;
     font-weight: 300;
+    letter-spacing: .5px;
+    overflow-Y: scroll;
+}
+.cabin_rental .card p::-webkit-scrollbar-track {
+    display: none;
 }
 .cabin_rental button {
     display: block;
@@ -406,6 +424,12 @@ footer ul li a {
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
+    .polaroids .text {
+        padding: 0 2rem;
+    }
+    .polaroids .text #quote {
+        display: none;
+    }
     #parallax-slow {
         display: none;
     }
@@ -442,6 +466,7 @@ footer ul li a {
         margin: 50px auto;
     }
     .cabin_rental-wrapper {
+        background-image: none;
         background-attachment: scroll;
     }
     .cabin_rental {
@@ -461,7 +486,7 @@ footer ul li a {
         margin: 50px auto;
     }
     .cabin_rental {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem .8rem;
     }
     footer {
@@ -469,11 +494,12 @@ footer ul li a {
         gap: 1rem 0;
     }
 }
-@media screen and (max-width: 473px) {
+@media screen and (max-width: 605px) {
     .activities {
         padding: 0 .2rem;
     }
     .cabin_rental {
+        grid-template-columns: repeat(1, 1fr);
         padding: 2rem .2rem;
     }
     .form-container {
