@@ -485,6 +485,9 @@ footer ul li a {
         width: 95%;
         padding: 0;
     }
+    .cabin-rental .card {
+        background-color: var(--clr-midGreen);
+    }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
     }
