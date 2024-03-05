@@ -321,7 +321,7 @@ body {
 .right-section {
     width: 95%;
 }
-.right-section h5 {
+.right-section h2 {
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-transform: uppercase;
     font-weight: 500;
@@ -372,7 +372,7 @@ footer {
     padding: 2rem 3rem;
     background-color: var(--clr-midGreen);
 }
-footer h6 {
+footer h2 {
     font-size: clamp(.95rem, 3vw, 1rem);
     text-transform: uppercase;
     font-weight: 500;
