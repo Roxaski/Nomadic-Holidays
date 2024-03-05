@@ -55,8 +55,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: -18%;
+    position: relative;
+    top: 50px;
     width: 500px;
     max-width: 80%;
     text-align: center;
