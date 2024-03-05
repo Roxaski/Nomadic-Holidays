@@ -245,7 +245,8 @@ body {
     width: 100%;
     height: auto;
 }
-.cabin-rental .card .icons {
+.cabin-rental .card .icons ul li {
+    display: inline-block;
     line-height: 2.3;
 }
 .cabin-rental .card .icons span {
@@ -263,7 +264,7 @@ body {
     text-align: left;
 }
 .cabin-rental .card h4 {
-    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    font-size: clamp(1rem, 3vw, 1.1rem);
     text-align: left;
     text-transform: capitalize;
     line-height: 2;
