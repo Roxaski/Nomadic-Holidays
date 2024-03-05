@@ -55,14 +55,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 25%;
-    width: 450px;
+    position: absolute;
+    bottom: -18%;
+    width: 500px;
     max-width: 80%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 500;
     background: var(--clr-darkGreen);
     border: var(--clr-lightGrey) 3px solid;
