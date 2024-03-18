@@ -67,7 +67,6 @@ body {
     background: var(--clr-darkGreen);
     border: var(--clr-lightGrey) 3px solid;
     padding: 1.25rem;
-    z-index: 1;
 }
 .mobile-graphic {
     display: none;
@@ -248,6 +247,41 @@ body {
 .cabin-rental .card .icons ul li {
     display: inline-block;
     line-height: 2.3;
+}
+.cabin-rental .card .icons ul li a {
+    position: relative;
+}
+.cabin-rental .card .icons ul li a::before,
+.cabin-rental .card .icons ul li a::after {
+    display: none;
+}
+.cabin-rental .card .icons ul li a:hover:before,
+.cabin-rental .card .icons ul li a:hover:after {
+    display: inline-block;
+}
+.cabin-rental .card .icons ul li a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -3.2rem;
+    width: 6rem;
+    height: auto;
+    background-color: var(--clr-green);
+    color: var(--clr-lightGrey);
+    padding: .15rem .5rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+.cabin-rental .card .icons ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -.65rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: .5rem solid var(--clr-green);
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
 }
 .cabin-rental .card .icons span {
     font-size: clamp(.6rem, 3vw, .7rem);
