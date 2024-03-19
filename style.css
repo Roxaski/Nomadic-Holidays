@@ -200,6 +200,7 @@ body {
     background: rgb(104,108,67);
     background: linear-gradient(145deg, rgba(104,108,67,1) 0%, rgba(50,56,38,1) 19%); 
     border: var(--clr-lightGrey) solid 2px;
+    border-radius: 10px;
 }
 .activities .card .fa-solid {
     font-size: 1.4rem;
@@ -238,11 +239,13 @@ body {
     color: var(--clr-lightGrey);
     background-color: var(--clr-darkGreen);
     border: solid 2px var(--clr-lightGrey);
+    border-radius: 10px;
 }
 .cabin-rental .card img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 .cabin-rental .card .icons ul li {
     display: inline-block;
@@ -345,6 +348,7 @@ body {
     width: 100%;
     height: auto;
     border: var(--clr-lightGrey) 2px solid;
+    border-radius: 7px;
 }
 .left-section img {
     display: block;
@@ -438,6 +442,11 @@ footer ul li a {
         position: relative;
         filter: brightness(95%);
         z-index: -1;
+    }
+    .mobile-graphic #medium_screens,
+    .mobile-graphic #small_screens,
+    .mobile-graphic #extra_small_screens {
+        display: none;
     }
     .mobile-graphic img {
         position: absolute;
@@ -534,6 +543,14 @@ footer ul li a {
     }
 }
 @media screen and (max-width: 865px) {
+    .mobile-graphic #large_screens,
+    .mobile-graphic #small_screens,
+    .mobile-graphic #extra_small_screens {
+        display: none;
+    }
+    .mobile-graphic #medium_screens {
+        display: block;
+    }
     .activities {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 .8rem;
@@ -563,6 +580,26 @@ footer ul li a {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem 0;
         padding: 2rem 2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobile-graphic #large_screens,
+    .mobile-graphic #medium_screens,
+    .mobile-graphic #extra_small_screens {
+        display: none;
+    }
+    .mobile-graphic #small_screens {
+        display: block;
+    }
+}
+@media screen and (max-width: 300px) {
+    .mobile-graphic #large_screens,
+    .mobile-graphic #medium_screens,
+    .mobile-graphic #small_screens {
+        display: none;
+    }
+    .mobile-graphic #extra_small_screens {
+        display: block;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 1200px) {
