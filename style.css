@@ -6,13 +6,11 @@
 }
 :root {
     --clr-blk: #212121;
-    --clr-white: #ebe7e7;
-    --clr-green: #686c43;
+    --clr-white: #dbd9d9;
+    --clr-green: #6d722a;
     --clr-lightGrey: #e2e2e2;
-    --clr-lightGreen: #a9ba80;
     --clr-midGreen: #323826;
-    --clr-darkGreen: #262a18;
-    --clr-darkerGreen: #31381e;
+    --clr-darkGreen: #292d24;
 }
 body {
     background-color: var(--clr-darkGreen);
@@ -198,7 +196,7 @@ body {
 .activities .card {
     padding: 1rem;
     background: rgb(104,108,67);
-    background: linear-gradient(145deg, rgba(104,108,67,1) 0%, rgba(50,56,38,1) 19%); 
+    background: linear-gradient(137deg, rgb(117, 123, 63) 0%, rgb(37, 39, 35) 18%); 
     border: var(--clr-lightGrey) solid 2px;
     border-radius: 10px;
 }
