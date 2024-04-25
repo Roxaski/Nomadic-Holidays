@@ -513,10 +513,7 @@ footer ul li a {
     }
     .cabin-rental-wrapper .title.mobile h2 {
         font-weight: 500;
-        font-size: 1.5rem;
-    }
-    .cabin-rental-wrapper .title.mobile p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .cabin-rental {
         display: grid;
@@ -537,7 +534,7 @@ footer ul li a {
     }
     .form-container .title.mobile h2 {
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
