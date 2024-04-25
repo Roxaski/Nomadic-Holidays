@@ -6,9 +6,9 @@
 }
 :root {
     --clr-blk: #212121;
-    --clr-white: #dbd9d9;
+    --clr-white: #d6d4d4;
     --clr-green: #6d722a;
-    --clr-lightGrey: #e2e2e2;
+    --clr-lightGrey: #b4b4b4;
     --clr-midGreen: #393f2f;
     --clr-darkGreen: #1f211e;
 }
@@ -85,7 +85,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    color: var(--clr-lightGrey);
+    color: var(--clr-white);
     width: 100%;
     padding: 2rem;
 }
@@ -147,22 +147,16 @@ body {
 }
 #parallax-slow button {
     display: block;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 500;
+    color: var(--clr-white);
     background-color: var(--clr-blk);
     border: none;
     border-radius: 5px;
     padding: 15px 25px;
     margin: 25px auto;
     cursor: pointer;
-}
-#parallax-slow button a {
-    display: block;
-    color: var(--clr-white);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    text-decoration: none;
-    padding: 15px 25px;
-    margin: -15px -25px;
 }
 #mobile-bg button {
     display: none;
@@ -198,7 +192,7 @@ body {
     padding: 1rem;
     background: rgb(104,108,67);
     background: linear-gradient(137deg, rgb(78, 79, 68) 0%, rgb(37, 39, 35) 18%); 
-    border: var(--clr-lightGrey) solid 2px;
+    border: var(--clr-midGreen) solid 2px;
     border-radius: 10px;
 }
 .activities .card .fa-solid {
@@ -207,7 +201,8 @@ body {
 .activities .card h3 {
     text-transform: capitalize;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--clr-white);
     margin: .5rem auto .25rem;
 }
 .activities .card p  {
@@ -237,7 +232,7 @@ body {
     height: 100%;
     color: var(--clr-lightGrey);
     background-color: var(--clr-darkGreen);
-    border: solid 2px var(--clr-lightGrey);
+    border: solid 2px var(--clr-white);
     border-radius: 10px;
 }
 .cabin-rental .card img {
@@ -268,7 +263,7 @@ body {
     width: 6rem;
     height: auto;
     background-color: var(--clr-green);
-    color: var(--clr-lightGrey);
+    color: var(--clr-white);
     padding: .15rem .5rem;
     text-transform: capitalize;
     border-radius: 5px;
@@ -290,13 +285,14 @@ body {
     letter-spacing: 5px;
 }
 .cabin-rental .card .contents {
+    color: var(--clr-white);
     padding: .75rem;
 }
 .cabin-rental .card h3 {
-    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    font-size: clamp(1rem, 3vw, 1.025rem);
     text-transform: capitalize;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: left;
 }
 .cabin-rental .card h4 {
@@ -321,7 +317,7 @@ body {
 .cabin-rental button {
     display: block;
     color: var(--clr-blk);
-    background-color: var(--clr-lightGrey);
+    background-color: var(--clr-white);
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
@@ -330,7 +326,7 @@ body {
     cursor: pointer;
 }
 .cabin-rental button:hover {
-    color: var(--clr-lightGrey);
+    color: var(--clr-white);
     background-color: var(--clr-green);
 }
 /*CONTACT FORM*/
@@ -376,7 +372,7 @@ body {
     border: none;
     border-radius: 2px;
     padding: 5px 5px;
-    background-color: var(--clr-lightGrey);
+    background-color: var(--clr-white);
 }
 .right-section .message-box textarea {
     min-height: 90px;
@@ -388,7 +384,7 @@ body {
     width: 100%;
     padding: .25rem 1rem;
     letter-spacing: 1px;
-    background-color: var(--clr-lightGrey);
+    background-color: var(--clr-white);
     color: var(--clr-blk);
     border-radius: 2px;
     border: none;
@@ -396,7 +392,7 @@ body {
     transition: 250ms ease-out;
 }
 .right-section button:hover {
-    color: var(--clr-lightGrey);
+    color: var(--clr-white);
     background-color: var(--clr-green);
 }
 /*FOOTER*/
@@ -490,22 +486,15 @@ footer ul li a {
     }
     #mobile-bg button {
         display: block;
+        color: var(--clr-white);
         background-color: var(--clr-blk);
+        text-transform: uppercase;
+        font-weight: 500;
         border: none;
         border-radius: 5px;
         padding: 15px 25px;
         margin: 25px auto;
         cursor: pointer;
-    }
-    #mobile-bg button a {
-        display: block;
-        color: var(--clr-white);
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: .5px;
-        text-decoration: none;
-        padding: 15px 25px;
-        margin: -15px -25px;
     }
     .activities {
         grid-template-columns: repeat(2, 1fr);
@@ -520,6 +509,14 @@ footer ul li a {
     .cabin-rental-wrapper .title.mobile {
         display: block;
         margin: 50px auto;
+        width: 90%;
+    }
+    .cabin-rental-wrapper .title.mobile h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .cabin-rental-wrapper .title.mobile p {
+        font-size: 1.2rem;
     }
     .cabin-rental {
         display: grid;
@@ -528,7 +525,8 @@ footer ul li a {
         padding: 0;
     }
     .cabin-rental .card {
-        background-color: var(--clr-midGreen);
+        border: var(--clr-lightGrey) solid 2px;
+        background-color: var(--clr-darkGreen);
     }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
@@ -536,6 +534,10 @@ footer ul li a {
     .form-container .title.mobile {
         display: block;
         margin: 0 auto 75px;
+    }
+    .form-container .title.mobile h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
     }
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
