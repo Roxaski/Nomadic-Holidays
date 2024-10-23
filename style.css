@@ -366,8 +366,7 @@ body {
     margin: 13px auto;
 }
 .right-section .input-box input:focus,
-.right-section .message-box textarea:focus,
-.right-section button:focus {
+.right-section .message-box textarea:focus {
     outline: solid 3px var(--clr-mossGreen);
 }
 .right-section .input-box input,
