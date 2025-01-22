@@ -2,7 +2,7 @@
 
 Created a webpage for the wonderful nature based holiday getaways
 
-Any constructive feedback is always greatly appreciated 💚
+Any constructive feedback is always greatly appreciated
 
 Images used :
 
