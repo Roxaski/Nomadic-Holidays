@@ -9,8 +9,8 @@
     --clr-white: #d6d4d4;
     --clr-lightGrey: #b4b4b4;
     --clr-mossGreen: #899206;
-    --clr-green: #6d722a;
-    --clr-midGreen: #393f2f;
+    --clr-green: #626719;
+    --clr-kaitokeGreen: #2f332c;
     --clr-darkGreen: #1f211e;
 }
 body {
@@ -88,10 +88,14 @@ body {
     flex-direction: column;
     color: var(--clr-white);
     width: 100%;
-    padding: 2rem;
+}
+.polaroids .text:nth-child(1) {
+    padding-left: 2rem;
+}
+.polaroids .text:nth-child(2) {
+    padding-right: 2rem;
 }
 .polaroids .text h2 {
-    line-height: 1.9;
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 500;
@@ -164,22 +168,22 @@ body {
 }
 /*ACTIVITIES*/
 .title {
-    position: relative;
-    top: 1.5rem;
-    width: 90%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto 0;
+    text-align: center;
 }
 .title h2 {
-    text-align: center;
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 400;
     letter-spacing: .25px;
-    text-transform: uppercase;
-    font-weight: 500;
 }
 .title p {
-    text-align: center;
-    font-size: clamp(1rem, 3vw, 1.2rem);
     line-height: 1.7;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-weight: 300;
     letter-spacing: .25px;
 }
 .activities {
@@ -193,7 +197,7 @@ body {
     padding: 1rem;
     background: rgb(104,108,67);
     background: linear-gradient(137deg, rgb(78, 79, 68) 0%, rgb(37, 39, 35) 18%); 
-    border: var(--clr-midGreen) solid 2px;
+    border: var(--clr-kaitokeGreen) solid 2px;
     border-radius: 10px;
 }
 .activities .card .fa-solid {
@@ -210,15 +214,26 @@ body {
     color: var(--clr-lightGrey);
     font-size: clamp(.95rem, 3vw, 1rem);
 }
+/* MOBILE TITLES */
+.mobile-title {
+    display: none;
+    margin: 50px auto 0;
+    text-align: center;
+}
+.mobile-title h2 {
+    font-weight: 400;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+.mobile-title p {
+    font-weight: 300;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
 /*RENTAL CABINS*/
 .cabin-rental-wrapper {
     background-image: url(./img/cabin_rentalBG.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-.cabin-rental-wrapper .title.mobile {
-    display: none;
 }
 .cabin-rental {
     display: grid;
@@ -334,9 +349,6 @@ body {
 .form-container {
     padding: 2rem;
 }
-.form-container .title.mobile {
-    display: none;
-}
 .contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -367,7 +379,7 @@ body {
 }
 .right-section .input-box input:focus,
 .right-section .message-box textarea:focus {
-    outline: solid 3px var(--clr-mossGreen);
+    outline: solid 2.5px var(--clr-mossGreen);
 }
 .right-section .input-box input,
 .right-section .message-box textarea {
@@ -378,6 +390,7 @@ body {
     outline: none;
     border-radius: 2px;
     padding: 5px 5px;
+    font-size: 1rem;
     background-color: var(--clr-white);
 }
 .right-section .message-box textarea {
@@ -408,8 +421,8 @@ footer {
     justify-items: flex-start;
     width: 100%;
     height: auto;
-    padding: 2rem 3rem;
-    background-color: var(--clr-midGreen);
+    padding: 2rem 2.35rem;
+    background-color: var(--clr-kaitokeGreen);
 }
 footer h2 {
     font-size: clamp(.95rem, 3vw, 1rem);
@@ -474,8 +487,17 @@ footer ul li a {
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
+    .polaroids .img-wrapper {
+        padding: 2rem 2rem 1.5rem 2rem;
+    }
     .polaroids .text {
-        padding: 0 2rem;
+        width: 95%;
+    }
+    .polaroids .text:nth-child(1) {
+        padding-left: 2rem;
+    }
+    .polaroids .text:nth-child(2) {
+        padding-left: 2rem;
     }
     .polaroids .text #quote {
         display: none;
@@ -506,26 +528,21 @@ footer ul li a {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
         width: 95%;
-        margin: 50px auto;
+    }
+    .mobile-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     .cabin-rental-wrapper {
         background-image: none;
         background-attachment: scroll;
     }
-    .cabin-rental-wrapper .title.mobile {
-        display: block;
-        margin: 50px auto;
-        width: 90%;
-    }
-    .cabin-rental-wrapper .title.mobile h2 {
-        font-weight: 500;
-        font-size: 1.4rem;
-    }
     .cabin-rental {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 95%;
-        padding: 0;
     }
     .cabin-rental .card {
         border: var(--clr-lightGrey) solid 2px;
@@ -533,14 +550,6 @@ footer ul li a {
     }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
-    }
-    .form-container .title.mobile {
-        display: block;
-        margin: 0 auto 75px;
-    }
-    .form-container .title.mobile h2 {
-        font-weight: 500;
-        font-size: 1.4rem;
     }
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
@@ -558,11 +567,10 @@ footer ul li a {
     .activities {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 .8rem;
-        margin: 50px auto;
     }
     .cabin-rental {
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem .8rem;
+        padding: 2rem .8rem 0 1rem;
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
@@ -583,7 +591,7 @@ footer ul li a {
     footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem 0;
-        padding: 2rem 2rem;
+        padding: 2rem 1.5rem;
     }
 }
 @media screen and (max-width: 500px) {
@@ -594,6 +602,17 @@ footer ul li a {
     }
     .mobile-graphic #small_screens {
         display: block;
+    }
+    .title,
+    .mobile-title {
+        width: 85%;
+        margin: 50px auto;
+    }
+    .cabin-rental {
+        padding: 0;
+    }
+    .form-container {
+        padding: 0 1rem 2rem 1rem;
     }
 }
 @media screen and (max-width: 300px) {
