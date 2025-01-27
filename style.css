@@ -196,7 +196,7 @@ body {
 .activities .card {
     padding: 1rem;
     background: rgb(104,108,67);
-    background: linear-gradient(137deg, rgb(78, 79, 68) 0%, rgb(37, 39, 35) 18%); 
+    background: linear-gradient(137deg, rgb(78, 79, 68) 0%, rgb(46, 48, 43) 18%); 
     border: var(--clr-kaitokeGreen) solid 2px;
     border-radius: 10px;
 }
@@ -487,11 +487,21 @@ footer ul li a {
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
     }
-    .polaroids .img-wrapper {
-        padding: 2rem 2rem 1.5rem 2rem;
+    .polaroids .img-wrapper:nth-child(1) {
+        padding: 2rem 2rem 0 2rem;
+    }
+    .polaroids .img-wrapper:nth-child(2) {
+        padding: 0 2rem 2rem 2rem;
+    }
+    .polaroids .img-wrapper:nth-child(1) p {
+        bottom: 1.1rem;
+    }
+    .polaroids .img-wrapper:nth-child(2) p {
+        bottom: 3.25rem;
     }
     .polaroids .text {
         width: 95%;
+        margin-top: 15px;
     }
     .polaroids .text:nth-child(1) {
         padding-left: 2rem;
@@ -609,7 +619,7 @@ footer ul li a {
         margin: 50px auto;
     }
     .cabin-rental {
-        padding: 0;
+        padding: 0 .2rem;
     }
     .form-container {
         padding: 0 1rem 2rem 1rem;
