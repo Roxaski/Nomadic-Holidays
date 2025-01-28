@@ -195,9 +195,9 @@ body {
 }
 .activities .card {
     padding: 1rem;
-    background: rgb(104,108,67);
-    background: linear-gradient(137deg, rgb(78, 79, 68) 0%, rgb(46, 48, 43) 18%); 
-    border: var(--clr-kaitokeGreen) solid 2px;
+    background: rgb(31, 33, 30);
+    background: linear-gradient(137deg, rgb(61, 62, 57) 0%, rgb(31, 33, 30) 18%); 
+    border: var(--clr-lightGrey) solid 2px;
     border-radius: 10px;
 }
 .activities .card .fa-solid {
@@ -255,7 +255,8 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .cabin-rental .card .icons ul li {
     display: inline-block;
