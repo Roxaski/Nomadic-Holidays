@@ -4,7 +4,7 @@
 
 ## Welcome to Nomadic Holidays
 
-Welcome to the most relaxing holiday getaway of your life! I present to you Nomadic Holidays. This webpage is all about relaxing cabin retreats in some of the most beautiful locations around the world. There are cabin options that suits everyone, be it a small family or a couple who just wants to relax. Not only that but there are activities for anyone who is into a variety of outdoor sports. Have i mentioned the stunning Vistas yet? Some of the most gorgeous views you can experience. 
+Welcome to the most relaxing holiday getaway of your life! I present to you Nomadic Holidays. This webpage is all about relaxing cabin retreats in some of the most beautiful locations around the world. There are cabin options that suits everyone, be it a small family or a couple who just wants to relax. Not only that but there are activities for anyone who is into a variety of outdoor sports. Have i mentioned the stunning Vistas yet? Some of the most gorgeous views you can imagine. 
 
 ## Feedback
 
