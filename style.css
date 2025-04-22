@@ -251,7 +251,6 @@ body {
     border-radius: 10px;
 }
 .cabin-rental .card img {
-    display: block;
     width: 100%;
     height: auto;
     border-top-left-radius: 10px;
@@ -359,7 +358,6 @@ body {
     border-radius: 7px;
 }
 .left-section img {
-    display: block;
     width: 100%;
     height: 100%;
     padding: .75rem;
