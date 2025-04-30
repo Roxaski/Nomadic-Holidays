@@ -160,7 +160,6 @@ body {
     border-radius: 5px;
     padding: 15px 25px;
     margin: 25px auto;
-    cursor: pointer;
 }
 #mobile-bg button {
     display: none;
@@ -338,7 +337,6 @@ body {
     padding: 5px 20px;
     margin: 25px auto;
     transition: 250ms ease-out;
-    cursor: pointer;
 }
 .cabin-rental button:hover {
     color: var(--clr-white);
@@ -409,7 +407,7 @@ body {
     color: var(--clr-blk);
     border-radius: 2px;
     border: none;
-    cursor: pointer;
+    outline: none;
     transition: 250ms ease-out;
 }
 .right-section button:hover {
@@ -530,7 +528,6 @@ footer ul li {
         border-radius: 5px;
         padding: 15px 25px;
         margin: 25px auto;
-        cursor: pointer;
     }
     .activities {
         grid-template-columns: repeat(2, 1fr);
