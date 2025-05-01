@@ -8,7 +8,7 @@
     --clr-white: #d6d4d4;
     --clr-lightGrey: #b4b4b4;
     --clr-mossGreen: #899206;
-    --clr-green: #626719;
+    --clr-green: #585a4a;
     --clr-kaitokeGreen: #2f332c;
     --clr-darkGreen: #1f211e;
 }
@@ -338,10 +338,6 @@ body {
     margin: 25px auto;
     transition: 250ms ease-out;
 }
-.cabin-rental button:hover {
-    color: var(--clr-white);
-    background-color: var(--clr-green);
-}
 /*CONTACT FORM*/
 .form-container {
     padding: 2rem;
@@ -409,10 +405,6 @@ body {
     border: none;
     outline: none;
     transition: 250ms ease-out;
-}
-.right-section button:hover {
-    color: var(--clr-white);
-    background-color: var(--clr-green);
 }
 /*FOOTER*/
 footer {
