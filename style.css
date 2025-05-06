@@ -145,7 +145,7 @@ body {
 /*BOOK NOW PARALLAX*/
 #parallax-slow {
     padding: 2rem;
-    background-image: url(./img/mountain_lake.webp);
+    background-image: url(./assets/mountain_lake.webp);
     position: relative;
     background-size: cover;
 }
@@ -228,7 +228,7 @@ body {
 }
 /*RENTAL CABINS*/
 .cabin-rental-wrapper {
-    background-image: url(./img/cabin_rentalBG.webp);
+    background-image: url(./assets/cabin_rentalBG.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -505,7 +505,7 @@ footer ul li {
     }
     #mobile-bg {
         padding: 2rem;
-        background-image: url(./img/mountain_lake.webp);
+        background-image: url(./assets/mountain_lake.webp);
         background-position: bottom;
         position: relative;
         background-size: cover;
