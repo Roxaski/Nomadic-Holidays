@@ -7,7 +7,8 @@
     --clr-blk: #212121;
     --clr-white: #d6d4d4;
     --clr-lightGrey: #b4b4b4;
-    --clr-kaitokeGreen: #485340;
+    --clr-green: #585a4a;
+    --clr-kaitokeGreen: #2f332c;
     --clr-darkGreen: #1f211e;
 }
 body {
@@ -274,7 +275,7 @@ body {
     bottom: -3.2rem;
     width: 6rem;
     height: auto;
-    background-color: var(--clr-kaitokeGreen);
+    background-color: var(--clr-green);
     color: var(--clr-white);
     padding: .15rem .5rem;
     text-transform: capitalize;
@@ -288,7 +289,7 @@ body {
     bottom: -.65rem;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: .5rem solid var(--clr-kaitokeGreen);
+    border-bottom: .5rem solid var(--clr-green);
     border-left: .5rem solid transparent;
     border-right: .5rem solid transparent;
 }
