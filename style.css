@@ -9,7 +9,6 @@
     --clr-white: #f9f9f9;
     --clr-offWhite: #e4e1e1;
     --clr-green: #6d7c12;
-    --clr-darkGreen: #3b4139;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -201,7 +200,7 @@ body {
     position: relative;
     bottom: .15rem;
     font-size: 1.2rem;
-    color: var(--clr-darkGreen);
+    color: var(--clr-grey);
 }
 .activities .card img {
     width: 100%;
@@ -299,7 +298,7 @@ body {
     height: auto;
     font-size: clamp(.8rem, 3vw, .85rem);
     color: var(--clr-white);
-    background: var(--clr-darkGreen);
+    background: var(--clr-grey);
     padding: .1rem .5rem;
     text-transform: capitalize;
     border-radius: 5px;
@@ -308,7 +307,7 @@ body {
     z-index: 1;
 }
 .cabin-rental .card .contents .icons span {
-    font-size: clamp(.9rem, 3vw, 1rem);
+    font-size: .95rem;
     margin-right: 1.5rem;
 }
 .cabin-rental .card .contents {
@@ -331,12 +330,12 @@ body {
     display: none;
 }
 .cabin-rental .card .contents p::-webkit-scrollbar-thumb {
-    background: var(--clr-darkGreen);
+    background: var(--clr-grey);
 }
 .cabin-rental .card .contents button {
     display: block;
     color: var(--clr-white);
-    background: var(--clr-darkGreen);
+    background: var(--clr-grey);
     border: none;
     border-radius: 5px;
     padding: .5rem 1rem;
@@ -356,21 +355,21 @@ body {
     width: 100%;
     height: auto;
     color: var(--clr-white);
-    background: var(--clr-darkGreen);
+    background: var(--clr-grey);
     border-radius: 7px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
-.left-section {
+.contact-form .left-section {
     padding: .75rem;
 }
-.left-section img {
+.contact-form .left-section img {
     width: 100%;
     height: auto;
 }
-.right-section {
+.contact-form .right-section {
     width: 95%;
 }
-.right-section h2 {
+.contact-form .right-section h2 {
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-transform: uppercase;
     font-weight: 500;
@@ -380,8 +379,8 @@ body {
     letter-spacing: 1px;
     margin: 13px auto;
 }
-.right-section .input-box input,
-.right-section .message-box textarea {
+.contact-form .right-section .input-box input,
+.contact-form .right-section .message-box textarea {
     width: 100%;
     height: 40px;
     margin: 3px auto;
@@ -392,16 +391,17 @@ body {
     font-size: 1rem;
     background-color: var(--clr-white);
 }
-.right-section .message-box textarea {
+.contact-form .right-section .message-box textarea {
     min-height: 90px;
     resize: none;
 }
-.right-section button {
+.contact-form .right-section button {
     display: block;
     margin: 3px auto 10px;
     width: 100%;
     padding: .25rem 1rem;
     letter-spacing: .5px;
+    color: var(--clr-blk);
     background-color: var(--clr-white);
     border-radius: 2px;
     border: none;
@@ -418,7 +418,7 @@ footer {
     height: auto;
     padding: 1rem 2.35rem;
     color: var(--clr-white);
-    background-color: var(--clr-darkGreen);
+    background-color: var(--clr-grey);
 }
 footer h2 {
     font-size: clamp(.95rem, 3vw, 1rem);
@@ -696,16 +696,15 @@ footer ul li {
         background: var(--clr-grey);
     }
     .cabin-rental .card .contents .icons ul li span::before {
-        content: attr(data-tooltip);
-        color: var(--clr-offWhite);
-        background: var(--clr-blk);
+        color: var(--clr-blk);
+        background: var(--clr-offWhite);
     }
     .cabin-rental .card .contents p::-webkit-scrollbar-thumb {
         background: var(--clr-offWhite);
     }
     .cabin-rental .card .contents button {
-        color: var(--clr-offWhite);
-        background: var(--clr-blk);
+        color: var(--clr-blk);
+        background: var(--clr-offWhite);
     }
     .right-section .input-box input,
     .right-section .message-box textarea {
@@ -718,7 +717,6 @@ footer ul li {
         background: var(--clr-grey);
     }
     .contact-form .right-section button {
-        color: var(--clr-blk);
         background: var(--clr-offWhite);
     }
     footer {
