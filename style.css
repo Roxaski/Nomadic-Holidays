@@ -358,10 +358,12 @@ body {
     border-radius: 7px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
+.left-section {
+    padding: .75rem;
+}
 .left-section img {
     width: 100%;
-    height: 100%;
-    padding: .75rem;
+    height: auto;
 }
 .right-section {
     width: 95%;
