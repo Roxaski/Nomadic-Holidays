@@ -516,8 +516,8 @@ footer ul li {
     }
     #mobile-bg button {
         display: block;
-        color: var(--clr-white);
-        background: var(--clr-darkGreen);
+        color: var(--clr-blk);
+        background: var(--clr-white);
         text-transform: uppercase;
         font-weight: 500;
         border: none;
@@ -680,6 +680,10 @@ footer ul li {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
+    #mobile-bg button {
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
     .activities .card {
         color: var(--clr-offWhite);
         background: var(--clr-grey);
@@ -712,6 +716,10 @@ footer ul li {
     }
     .contact-form {
         background: var(--clr-grey);
+    }
+    .contact-form .right-section button {
+        color: var(--clr-blk);
+        background: var(--clr-offWhite);
     }
     footer {
         background: var(--clr-grey);
