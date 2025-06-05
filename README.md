@@ -1,6 +1,7 @@
 # Nomadic-Holidays
 
-![nomadic_holidays](https://github.com/user-attachments/assets/d3a32150-1fb7-4912-b934-6495c08ee31c)
+
+![nomadic_holidays](https://github.com/user-attachments/assets/16c789ac-9241-4285-98e3-6ef4ca019781)
 
 ## Welcome to Nomadic Holidays
 
