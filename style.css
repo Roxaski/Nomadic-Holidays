@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 :root {
-    --clr-blk: #212121;
-    --clr-white: #d6d4d4;
-    --clr-lightGrey: #b4b4b4;
-    --clr-green: #585a4a;
-    --clr-kaitokeGreen: #2f332c;
-    --clr-darkGreen: #1f211e;
+    --clr-blk: #272626;
+    --clr-grey: #3b3a3a;
+    --clr-white: #f9f9f9;
+    --clr-offWhite: #e4e1e1;
+    --clr-green: #6d7c12;
+    --clr-darkGreen: #3b4139;
 }
 body {
-    background-color: var(--clr-darkGreen);
     font-family: 'Poppins', sans-serif;
-    color: var(--clr-white);
+    color: var(--clr-blk);
+    background: var(--clr-offWhite);
     cursor: default;
     overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.parallax h1 {
+.parallax h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,8 +61,9 @@ body {
     letter-spacing: 2px;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 500;
-    background: var(--clr-darkGreen);
-    border: var(--clr-lightGrey) 3px solid;
+    color: var(--clr-white);
+    background: var(--clr-blk);
+    border: var(--clr-white) 3px solid;
     padding: 1.25rem;
 }
 .mobile-graphic {
@@ -77,14 +78,13 @@ body {
 .polaroids {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: var(--clr-darkGreen);
+    background: var(--clr-offWhite);
 }
 .polaroids .text {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    color: var(--clr-white);
     width: 100%;
 }
 .polaroids .text:nth-child(1) {
@@ -118,14 +118,15 @@ body {
     top: .3rem;
 }
 .polaroids .img-wrapper {
-    padding: 2rem;
     position: relative;
+    padding: 2rem;
 }
 .polaroids .img-wrapper img {
     width: 100%;
     height: auto;
     border: var(--clr-white) solid 5px;
     border-bottom: 60px solid var(--clr-white);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .2);
 }
 .polaroids .img-wrapper p {
     position: absolute;
@@ -153,8 +154,8 @@ body {
     text-transform: uppercase;
     letter-spacing: .5px;
     font-weight: 500;
-    color: var(--clr-white);
-    background-color: var(--clr-blk);
+    color: var(--clr-blk);
+    background-color: var(--clr-white);
     border: none;
     border-radius: 5px;
     padding: 15px 25px;
@@ -174,7 +175,7 @@ body {
 }
 .title h2 {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: .25px;
 }
 .title p {
@@ -191,25 +192,37 @@ body {
     margin: 25px auto;
 }
 .activities .card {
-    padding: 1rem;
-    background: rgb(31, 33, 30);
-    background: linear-gradient(137deg, rgb(61, 62, 57) 0%, rgb(31, 33, 30) 18%); 
-    border: var(--clr-lightGrey) solid 2px;
-    border-radius: 10px;
+    color: var(--clr-blk);
+    background: var(--clr-white);
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
 .activities .card .fa-solid {
-    font-size: 1.4rem;
+    position: relative;
+    bottom: .15rem;
+    font-size: 1.2rem;
+    color: var(--clr-darkGreen);
+}
+.activities .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.activities .card .content {
+    padding: .75rem;
 }
 .activities .card h3 {
+    display: inline-block;
     text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: var(--clr-white);
-    margin: .5rem auto .25rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-weight: 400;
+    margin-bottom: .95rem;
+    margin-left: .45rem;
 }
 .activities .card p  {
-    color: var(--clr-lightGrey);
-    font-size: clamp(.95rem, 3vw, 1rem);
+    font-weight: 300;
+    font-size: .95rem;
+    line-height: 1.7;
 }
 /* MOBILE TITLES */
 .mobile-title {
@@ -235,7 +248,7 @@ body {
 .cabin-rental {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 45rem;
+    width: 45.5rem;
     margin: 0 auto;
     gap: 1rem;
     padding: 2rem;
@@ -243,10 +256,11 @@ body {
 .cabin-rental .card {
     width: 100%;
     height: 100%;
-    color: var(--clr-lightGrey);
-    background-color: var(--clr-darkGreen);
-    border: solid 2px var(--clr-white);
+    color: var(--clr-blk);
+    background: var(--clr-offWhite);
+    border: solid 2px var(--clr-offWhite);
     border-radius: 10px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .7);
 }
 .cabin-rental .card img {
     width: 100%;
@@ -254,87 +268,79 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.cabin-rental .card .icons ul li {
+.cabin-rental .card .contents h3 {
+    font-size: clamp(1rem, 3vw, 1.025rem);
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: .75rem;
+}
+.cabin-rental .card .contents .icons ul li {
     display: inline-block;
     line-height: 2.3;
 }
-.cabin-rental .card .icons ul li a {
+.cabin-rental .card .contents .icons ul li span {
     position: relative;
 }
-.cabin-rental .card .icons ul li a::before,
-.cabin-rental .card .icons ul li a::after {
+.cabin-rental .card .contents .icons ul li span::before,
+.cabin-rental .card .contents .icons ul li span::after {
     display: none;
 }
-.cabin-rental .card .icons ul li a:hover:before,
-.cabin-rental .card .icons ul li a:hover:after {
+.cabin-rental .card .contents .icons ul li span:hover:before,
+.cabin-rental .card .contents .icons ul li span:hover:after {
     display: inline-block;
 }
-.cabin-rental .card .icons ul li a::before {
+.cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: -3.2rem;
-    width: 6rem;
+    bottom: -2.75rem;
+    width: 6.5rem;
     height: auto;
-    background-color: var(--clr-green);
+    font-size: clamp(.8rem, 3vw, .85rem);
     color: var(--clr-white);
-    padding: .15rem .5rem;
+    background: var(--clr-darkGreen);
+    padding: .1rem .5rem;
     text-transform: capitalize;
     border-radius: 5px;
     text-align: center;
     z-index: 1;
 }
-.cabin-rental .card .icons ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -.65rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: .5rem solid var(--clr-green);
-    border-left: .5rem solid transparent;
-    border-right: .5rem solid transparent;
-}
-.cabin-rental .card .icons span {
-    font-size: clamp(.6rem, 3vw, .7rem);
-    letter-spacing: 5px;
+.cabin-rental .card .contents .icons span {
+    font-size: clamp(.9rem, 3vw, 1rem);
+    margin-right: 1.5rem;
 }
 .cabin-rental .card .contents {
-    color: var(--clr-white);
     padding: .75rem;
+    letter-spacing: .5px;
 }
-.cabin-rental .card h3 {
-    font-size: clamp(1rem, 3vw, 1.025rem);
-    text-transform: capitalize;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: left;
-}
-.cabin-rental .card h4 {
-    font-size: clamp(1rem, 3vw, 1.1rem);
-    text-align: left;
-    text-transform: capitalize;
-    line-height: 2;
-    font-weight: 400;
-}
-.cabin-rental .card p {
-    width: 99%;
+.cabin-rental .card .contents p {
     height: 6rem;
     margin: 15px auto;
     padding-right: 1rem;
     font-weight: 300;
     letter-spacing: .5px;
+    line-height: 1.5;
     overflow-Y: scroll;
 }
-.cabin-rental .card p::-webkit-scrollbar-track {
+.cabin-rental .card .contents p::-webkit-scrollbar {
+    width: 8px;
+}
+.cabin-rental .card .contents p::-webkit-scrollbar-track {
     display: none;
 }
-.cabin-rental button {
+.cabin-rental .card .contents p::-webkit-scrollbar-thumb {
+    background: var(--clr-darkGreen);
+}
+.cabin-rental .card .contents button {
     display: block;
-    color: var(--clr-blk);
-    background-color: var(--clr-white);
+    color: var(--clr-white);
+    background: var(--clr-darkGreen);
     border: none;
     border-radius: 5px;
-    padding: 5px 20px;
-    margin: 25px auto;
+    padding: .5rem 1rem;
+    margin: 40px auto 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    text-transform: uppercase;
     transition: 250ms ease-out;
 }
 /*CONTACT FORM*/
@@ -347,8 +353,10 @@ body {
     justify-items: center;
     width: 100%;
     height: auto;
-    border: var(--clr-lightGrey) 2px solid;
+    color: var(--clr-white);
+    background: var(--clr-darkGreen);
     border-radius: 7px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
 .left-section img {
     width: 100%;
@@ -384,21 +392,17 @@ body {
     min-height: 90px;
     resize: none;
 }
-.right-section input::placeholder,
-.right-section textarea::placeholder {
-    color: var(--clr-blk);
-}
 .right-section button {
     display: block;
     margin: 3px auto 10px;
     width: 100%;
     padding: .25rem 1rem;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     background-color: var(--clr-white);
-    color: var(--clr-blk);
     border-radius: 2px;
     border: none;
     outline: none;
+    text-transform: uppercase;
     transition: 250ms ease-out;
 }
 /*FOOTER*/
@@ -408,8 +412,9 @@ footer {
     justify-items: flex-start;
     width: 100%;
     height: auto;
-    padding: 2rem 2.35rem;
-    background-color: var(--clr-kaitokeGreen);
+    padding: 1rem 2.35rem;
+    color: var(--clr-white);
+    background-color: var(--clr-darkGreen);
 }
 footer h2 {
     font-size: clamp(.95rem, 3vw, 1rem);
@@ -418,7 +423,6 @@ footer h2 {
     letter-spacing: 1px;
 }
 footer ul li {
-    color: var(--clr-lightGrey);
     font-size: clamp(.8rem, 3vw, .85rem);
     text-transform: capitalize;
     letter-spacing: .75px;
@@ -451,7 +455,7 @@ footer ul li {
         width: 100%;
         object-fit: cover;
     }
-    .mobile-graphic h1 {
+    .mobile-graphic h2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -462,8 +466,9 @@ footer ul li {
         letter-spacing: 2px;
         font-size: clamp(1.3rem, 3vw, 1.6rem);
         font-weight: 500;
-        background: var(--clr-darkGreen);
-        border: var(--clr-lightGrey) 3px solid;
+        color: var(--clr-white);
+        background: var(--clr-blk);
+        border: var(--clr-white) 3px solid;
         padding: 1.5rem;
         z-index: 1;
     }
@@ -508,7 +513,7 @@ footer ul li {
     #mobile-bg button {
         display: block;
         color: var(--clr-white);
-        background-color: var(--clr-blk);
+        background: var(--clr-darkGreen);
         text-transform: uppercase;
         font-weight: 500;
         border: none;
@@ -535,10 +540,6 @@ footer ul li {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 95%;
-    }
-    .cabin-rental .card {
-        border: var(--clr-lightGrey) solid 2px;
-        background-color: var(--clr-darkGreen);
     }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
@@ -631,13 +632,7 @@ footer ul li {
         filter: brightness(95%);
         z-index: -1;
     }
-    .mobile-graphic img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .mobile-graphic h1 {
+    .mobile-graphic h2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -648,12 +643,73 @@ footer ul li {
         letter-spacing: 2px;
         font-size: clamp(1.3rem, 3vw, 1.6rem);
         font-weight: 500;
-        background: var(--clr-darkGreen);
-        border: var(--clr-lightGrey) 3px solid;
+        color: var(--clr-white);
+        background: var(--clr-blk);
+        border: var(--clr-white) 3px solid;
         padding: 1.5rem;
         z-index: 1;
     }
+    .mobile-graphic img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     .form-container {
         width: 100%;
+    }
+}
+/* dark mode */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
+    .polaroids {
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
+    .polaroids .img-wrapper img {
+        background: var(--clr-offWhite);
+    }
+    #parallax-slow button {
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
+    .activities .card {
+        color: var(--clr-offWhite);
+        background: var(--clr-grey);
+    }
+    .activities .card .content i {
+        color: var(--clr-offWhite);
+    }
+    .cabin-rental .card {
+        color: var(--clr-offWhite);
+        background: var(--clr-grey);
+    }
+    .cabin-rental .card .contents .icons ul li span::before {
+        content: attr(data-tooltip);
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
+    .cabin-rental .card .contents p::-webkit-scrollbar-thumb {
+        background: var(--clr-offWhite);
+    }
+    .cabin-rental .card .contents button {
+        color: var(--clr-offWhite);
+        background: var(--clr-blk);
+    }
+    .right-section .input-box input,
+    .right-section .message-box textarea {
+        background-color: var(--clr-offWhite);
+    }
+    .right-section button {
+        background: var(--clr-offWhite);
+    }
+    .contact-form {
+        background: var(--clr-grey);
+    }
+    footer {
+        background: var(--clr-grey);
     }
 }
