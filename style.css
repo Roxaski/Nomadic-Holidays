@@ -285,6 +285,7 @@ body {
 .cabin-rental .card .contents .icons ul li span::before,
 .cabin-rental .card .contents .icons ul li span::after {
     display: none;
+    transform: translateY(15px);
 }
 .cabin-rental .card .contents .icons ul li span:hover:before,
 .cabin-rental .card .contents .icons ul li span:hover:after {
@@ -293,7 +294,7 @@ body {
 .cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: -2.75rem;
+    bottom: -2rem;
     width: 6.5rem;
     height: auto;
     font-size: clamp(.8rem, 3vw, .85rem);
@@ -303,6 +304,7 @@ body {
     text-transform: capitalize;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     z-index: 1;
 }
 .cabin-rental .card .contents .icons span {
