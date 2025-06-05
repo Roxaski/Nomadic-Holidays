@@ -545,6 +545,9 @@ footer ul li {
         grid-template-columns: repeat(2, 1fr);
         width: 95%;
     }
+    .cabin-rental .card {
+        border: none;
+    }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
     }
@@ -665,6 +668,9 @@ footer ul li {
 }
 /* dark mode */
 @media screen and (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--clr-grey);
+    }
     body {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
