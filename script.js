@@ -1,14 +1,9 @@
-let sun = document.getElementById('sun');
-let treeLeft = document.getElementById('tree-left');
-let treeRight = document.getElementById('tree-right');
-let parallaxSlow = document.getElementById('parallax-slow');
+let leftImg = document.getElementById('left-img');
+let bookNow = document.getElementById('book-now');
 
 //PARALLAX SCROLLING
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    
-    sun.style.marginTop = value - .1 + 'px',
-    treeLeft.style.right = value - .1 + 'px',
-    treeRight.style.left = value - .1 + 'px',
-    parallaxSlow.style.backgroundPositionY = value * .27 + 'px';
+    leftImg.style.marginTop = value - .1 + 'px',
+    bookNow.style.backgroundPositionY = value * .27 + 'px';
 });

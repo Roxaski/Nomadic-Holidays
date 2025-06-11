@@ -65,7 +65,7 @@ body {
     border: var(--clr-white) 3px solid;
     padding: 1.25rem;
 }
-.mobile-graphic {
+.mobile-hero {
     display: none;
 }
 /*CONTENT WRAPPER*/
@@ -142,13 +142,13 @@ body {
     font-weight: 500;
 }
 /*BOOK NOW PARALLAX*/
-#parallax-slow {
+#book-now {
     padding: 2rem;
     background-image: url(./assets/mountain_lake.webp);
     position: relative;
     background-size: cover;
 }
-#parallax-slow button {
+#book-now button {
     display: block;
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -438,43 +438,32 @@ footer ul li {
     .parallax {
         display: none;
     }
-    .mobile-graphic {
-        height: 100vh;
-        width: 100%;
+    .mobile-hero {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        filter: brightness(95%);
-        z-index: -1;
     }
-    .mobile-graphic #medium_screens,
-    .mobile-graphic #small_screens,
-    .mobile-graphic #extra_small_screens {
-        display: none;
-    }
-    .mobile-graphic img {
-        position: absolute;
-        height: 100%;
+    .mobile-hero img {
         width: 100%;
-        object-fit: cover;
+        height: auto;
     }
-    .mobile-graphic h2 {
+    .mobile-hero h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 450px;
-        max-width: 80%;
+        position: absolute;
+        width: 400px;
+        max-width: 50%;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: clamp(1.3rem, 3vw, 1.6rem);
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
         font-weight: 500;
         color: var(--clr-white);
         background: var(--clr-blk);
         border: var(--clr-white) 3px solid;
-        padding: 1.5rem;
-        z-index: 1;
+        padding: 1rem;
     }
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
@@ -504,7 +493,7 @@ footer ul li {
     .polaroids .text #quote {
         display: none;
     }
-    #parallax-slow {
+    #book-now {
         display: none;
     }
     #mobile-bg {
@@ -548,6 +537,9 @@ footer ul li {
     .cabin-rental .card {
         border: none;
     }
+    .cabin-rental .card .contents .icons span {
+        font-size: 1.025rem;
+    }
     .cabin-rental button {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
     }
@@ -556,14 +548,6 @@ footer ul li {
     }
 }
 @media screen and (max-width: 865px) {
-    .mobile-graphic #large_screens,
-    .mobile-graphic #small_screens,
-    .mobile-graphic #extra_small_screens {
-        display: none;
-    }
-    .mobile-graphic #medium_screens {
-        display: block;
-    }
     .activities {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 .8rem;
@@ -595,14 +579,6 @@ footer ul li {
     }
 }
 @media screen and (max-width: 500px) {
-    .mobile-graphic #large_screens,
-    .mobile-graphic #medium_screens,
-    .mobile-graphic #extra_small_screens {
-        display: none;
-    }
-    .mobile-graphic #small_screens {
-        display: block;
-    }
     .title,
     .mobile-title {
         width: 85%;
@@ -615,52 +591,42 @@ footer ul li {
         padding: 0 1rem 2rem 1rem;
     }
 }
-@media screen and (max-width: 300px) {
-    .mobile-graphic #large_screens,
-    .mobile-graphic #medium_screens,
-    .mobile-graphic #small_screens {
-        display: none;
-    }
-    .mobile-graphic #extra_small_screens {
-        display: block;
+@media screen and (max-width: 385px) {
+    .mobile-hero h2 {
+        width: 500px;
+        max-width: 50%;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 1200px) {
     .parallax {
         display: none;
     }
-    .mobile-graphic {
-        height: 100vh;
-        width: 100%;
+    .mobile-hero {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        filter: brightness(95%);
-        z-index: -1;
     }
-    .mobile-graphic h2 {
+    .mobile-hero img {
+        width: 100%;
+        height: auto;
+    }
+    .mobile-hero h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 450px;
-        max-width: 80%;
+        position: absolute;
+        width: 500px;
+        max-width: 50%;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: clamp(1.3rem, 3vw, 1.6rem);
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
         font-weight: 500;
         color: var(--clr-white);
         background: var(--clr-blk);
         border: var(--clr-white) 3px solid;
-        padding: 1.5rem;
-        z-index: 1;
-    }
-    .mobile-graphic img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        padding: 1rem;
     }
     .form-container {
         width: 100%;
@@ -682,7 +648,7 @@ footer ul li {
     .polaroids .img-wrapper img {
         background: var(--clr-offWhite);
     }
-    #parallax-slow button {
+    #book-now button {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
