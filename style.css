@@ -467,28 +467,29 @@ footer ul li {
     }
     .polaroids {
         grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
     }
     .polaroids .img-wrapper:nth-child(1) {
-        padding: 2rem 2rem 0 2rem;
+        padding: 0 1rem;
     }
     .polaroids .img-wrapper:nth-child(2) {
-        padding: 0 2rem 2rem 2rem;
+        padding: 0 1rem;
     }
     .polaroids .img-wrapper:nth-child(1) p {
         bottom: 1.1rem;
     }
     .polaroids .img-wrapper:nth-child(2) p {
-        bottom: 3.25rem;
+        bottom: 1.1rem;
     }
     .polaroids .text {
         width: 95%;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .polaroids .text:nth-child(1) {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
     .polaroids .text:nth-child(2) {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
     .polaroids .text #quote {
         display: none;
