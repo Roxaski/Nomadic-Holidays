@@ -484,6 +484,9 @@ footer ul li {
     .polaroids .text {
         width: 95%;
     }
+    .polaroids .text p {
+        margin: .15rem;
+    }
     .polaroids .text:nth-child(1) {
         padding-left: 1rem;
     }
