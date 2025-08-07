@@ -3,21 +3,28 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url('poppins-v23-latin-300.woff2') format('woff2');
+  src: url('./assets/fonts/poppins-v23-latin-300.woff2') format('woff2');
 }
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('poppins-v23-latin-regular.woff2') format('woff2');
+  src: url('./assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
 }
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: url('poppins-v23-latin-500.woff2') format('woff2');
+  src: url('./assets/fonts/poppins-v23-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Whisper';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/whisper-v6-latin-regular.woff2') format('woff2');
 }
 
 * {
