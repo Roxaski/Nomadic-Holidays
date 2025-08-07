@@ -1,7 +1,7 @@
 let leftImg = document.getElementById('left-img');
 let bookNow = document.getElementById('book-now');
 
-//PARALLAX SCROLLING
+// parallax scrolling
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
     leftImg.style.marginTop = value - .1 + 'px',
