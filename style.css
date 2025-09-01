@@ -60,7 +60,7 @@ body {
     border-radius: 5px;
 }
 /* Parallax Hero */
-.parallax {
+.hero-parallax {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -70,13 +70,13 @@ body {
     filter: brightness(95%);
     z-index: -1;
 }
-.parallax img {
+.hero-parallax img {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.parallax h2 {
+.hero-parallax h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +173,7 @@ body {
 /* Book Now Parallax */
 #book-now {
     padding: 2rem;
-    background-image: url(./assets/mountain_lake.webp);
+    background-image: url(./assets/book_now/banner_extra_large.webp);
     position: relative;
     background-size: cover;
 }
@@ -189,11 +189,11 @@ body {
     padding: 15px 25px;
     margin: 25px auto;
 }
-#mobile-bg button {
+#book-now-mobile button {
     display: none;
 }
 /* Activities */
-.title {
+.activities-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,12 +201,12 @@ body {
     margin: 50px auto 0;
     text-align: center;
 }
-.title h2 {
+.activities-title h2 {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 500;
     letter-spacing: .25px;
 }
-.title p {
+.activities-title p {
     line-height: 1.7;
     font-size: clamp(1rem, 3vw, 1.25rem);
     font-weight: 300;
@@ -234,7 +234,6 @@ body {
 .activities .card img {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 .activities .card .content {
     padding: .75rem;
@@ -242,7 +241,7 @@ body {
 .activities .card h3 {
     display: inline-block;
     text-transform: capitalize;
-    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-size: clamp(1rem, 3vw, 1.075rem);
     font-weight: 400;
     margin-bottom: .95rem;
     margin-left: .45rem;
@@ -268,7 +267,7 @@ body {
 }
 /* Cabin Rentals */
 .cabin-rental-wrapper {
-    background-image: url(./assets/cabin_rentalBG.webp);
+    background-image: url(./assets/rental_cabins/cabin_rental_bg_extra_large.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -296,6 +295,10 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.cabin-rental .card .contents {
+    padding: .75rem;
+    letter-spacing: .5px;
+}
 .cabin-rental .card .contents h3 {
     font-size: clamp(1rem, 3vw, 1.025rem);
     text-transform: capitalize;
@@ -305,42 +308,55 @@ body {
 }
 .cabin-rental .card .contents .icons ul li {
     display: inline-block;
-    line-height: 2.3;
 }
-.cabin-rental .card .contents .icons ul li span {
+.cabin-rental .card .contents .icons span {
     position: relative;
+    font-size: .95rem;
+    margin-right: 1.5rem;
 }
 .cabin-rental .card .contents .icons ul li span::before,
 .cabin-rental .card .contents .icons ul li span::after {
-    display: none;
-}
-.cabin-rental .card .contents .icons ul li span:hover:before,
-.cabin-rental .card .contents .icons ul li span:hover:after {
-    display: inline-block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 225ms ease;
 }
 .cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: -2.5rem;
+    top: -2.9rem;
     width: 6.5rem;
     height: auto;
     font-size: clamp(.8rem, 3vw, .85rem);
     color: var(--clr-white);
     background: var(--clr-grey);
-    padding: .1rem .5rem;
+    padding: .35rem;
     text-transform: capitalize;
     border-radius: 5px;
     text-align: center;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
-    z-index: 1;
 }
-.cabin-rental .card .contents .icons span {
-    font-size: .95rem;
-    margin-right: 1.5rem;
+.cabin-rental .card .contents .icons ul li span::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 35%;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid var(--clr-grey);
+    opacity: 0;
 }
-.cabin-rental .card .contents {
-    padding: .75rem;
-    letter-spacing: .5px;
+.cabin-rental .card .contents .icons ul li:nth-child(odd) span::before {
+    transform: translateY(-5px);
+}
+.cabin-rental .card .contents .icons ul li:nth-child(even) span::before {
+    transform: translateY(5px);
+}
+.cabin-rental .card .contents .icons ul li span:hover:before,
+.cabin-rental .card .contents .icons ul li span:hover:after {
+    opacity: 1;
+    transform: translateY(10px);
 }
 .cabin-rental .card .contents p {
     height: 6rem;
@@ -368,14 +384,13 @@ body {
     border-radius: 5px;
     padding: .5rem 1rem;
     font-size: .9rem;
-    margin: 40px auto 10px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
     text-transform: uppercase;
-    transition: 250ms ease-out;
+    width: 100%;
 }
 /* Contact Form */
 .form-container {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .contact-form {
     display: grid;
@@ -389,30 +404,32 @@ body {
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
 .contact-form .left-section {
-    padding: .75rem;
+    padding: .5rem .25rem .5rem .5rem;
 }
 .contact-form .left-section img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 .contact-form .right-section {
-    width: 95%;
+    width: 100%;
+    padding: 0 .5rem;
 }
 .contact-form .right-section h2 {
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .75px;
     text-align: center;
     line-height: 1.7;
     letter-spacing: 1px;
-    margin: 13px auto;
+    margin: 5px auto;
 }
 .contact-form .right-section .input-box input,
 .contact-form .right-section .message-box textarea {
     width: 100%;
     height: 40px;
-    margin: 3px auto;
+    margin: 5px auto;
     border: none;
     outline: none;
     border-radius: 2px;
@@ -421,12 +438,12 @@ body {
     background-color: var(--clr-white);
 }
 .contact-form .right-section .message-box textarea {
-    min-height: 90px;
+    min-height: 135px;
     resize: none;
 }
 .contact-form .right-section button {
     display: block;
-    margin: 3px auto 10px;
+    margin-bottom: 10px;
     width: 100%;
     padding: .25rem 1rem;
     letter-spacing: .5px;
@@ -437,14 +454,13 @@ body {
     outline: none;
     text-transform: uppercase;
     transition: 250ms ease-out;
+    width: 100%;
 }
 /* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: flex-start;
-    width: 100%;
-    height: auto;
     padding: 1rem 2.35rem;
     color: var(--clr-white);
     background-color: var(--clr-grey);
@@ -463,8 +479,41 @@ footer ul li {
     margin: 10px auto;
 }
 /* Media Query's */
+@media screen and (max-width: 1275px) {
+    #book-now {
+        display: none;
+    }
+    #book-now-mobile {
+        padding: 2rem;
+        background-image: url(./assets/book_now/book_now_mobile.webp);
+        background-position: bottom;
+        position: relative;
+        background-size: cover;
+    }
+    #book-now-mobile button {
+        display: block;
+        color: var(--clr-blk);
+        background: var(--clr-white);
+        text-transform: uppercase;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 25px auto;
+    }
+}
+@media screen and (max-width: 1125px) {
+    .activities {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        width: 95%;
+    }
+    .cabin-rental-wrapper {
+        background-image: url(./assets/rental_cabins/cabin_rental_bg_large.webp);
+    }
+}
 @media screen and (max-width: 986px) {
-    .parallax {
+    .hero-parallax {
         display: none;
     }
     .mobile-hero {
@@ -518,6 +567,7 @@ footer ul li {
     }
     .polaroids .text:nth-child(1) {
         padding-left: 1rem;
+        margin-bottom: 1rem;
     }
     .polaroids .text:nth-child(2) {
         padding-left: 1rem;
@@ -528,32 +578,6 @@ footer ul li {
     .polaroids .text #quote {
         display: none;
     }
-    #book-now {
-        display: none;
-    }
-    #mobile-bg {
-        padding: 2rem;
-        background-image: url(./assets/mountain_lake.webp);
-        background-position: bottom;
-        position: relative;
-        background-size: cover;
-    }
-    #mobile-bg button {
-        display: block;
-        color: var(--clr-blk);
-        background: var(--clr-white);
-        text-transform: uppercase;
-        font-weight: 500;
-        border: none;
-        border-radius: 5px;
-        padding: 15px 25px;
-        margin: 25px auto;
-    }
-    .activities {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-        width: 95%;
-    }
     .mobile-title {
         display: flex;
         align-items: center;
@@ -562,7 +586,6 @@ footer ul li {
     }
     .cabin-rental-wrapper {
         background-image: none;
-        background-attachment: scroll;
     }
     .cabin-rental {
         display: grid;
@@ -579,7 +602,11 @@ footer ul li {
         font-size: clamp(1.1rem, 3vw, 1.2rem);
     }
     .contact-form {
+        margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form .left-section {
+        padding: .5rem;
     }
 }
 @media screen and (max-width: 865px) {
@@ -618,7 +645,7 @@ footer ul li {
         max-width: 45%;
         padding: .5rem;
     }
-    .title,
+    .activities-title,
     .mobile-title {
         width: 85%;
         margin: 50px auto;
@@ -631,7 +658,7 @@ footer ul li {
     }
 }
 @media screen and (orientation: landscape) and (max-width: 1200px) {
-    .parallax {
+    .hero-parallax {
         display: none;
     }
     .mobile-hero {
@@ -645,9 +672,6 @@ footer ul li {
         height: auto;
     }
     .mobile-hero h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         position: absolute;
         width: 500px;
         max-width: 50%;
@@ -685,7 +709,7 @@ footer ul li {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
-    #mobile-bg button {
+    #book-now-mobile button {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
@@ -699,6 +723,9 @@ footer ul li {
     .cabin-rental .card {
         color: var(--clr-offWhite);
         background: var(--clr-grey);
+    }
+    .cabin-rental .card .contents .icons ul li span::after {
+        border-top: 7px solid var(--clr-offWhite);
     }
     .cabin-rental .card .contents .icons ul li span::before {
         color: var(--clr-blk);

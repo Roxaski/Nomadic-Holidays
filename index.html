@@ -10,7 +10,7 @@
     <meta property="og:site_name" content="Nomadic Holidays"/>
     <meta property="og:title" content="Nomadic Holidays | Alpine Cabin Retreats & Scenic Adventures">
     <meta property="og:description" content="Discover the perfect nature getaway with our alpine cabin retreats. Experience breathtaking mountain views and exciting activities like hiking and paragliding">
-    <meta property="og:image" content=""> <!-- OG IMAGE -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/Roxaski/Nomadic-Holidays/main/assets/open_graph/og_index.png">
     <meta property="og:image:alt" content="Nomadic Holidays">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -21,24 +21,30 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
-    <script defer async src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <script defer async src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <!-- Hero Parallax -->
         <section>
-            <div class="parallax">
-                <img id="left-img" width="1920" height="1080" draggable="false" src="./assets/background.webp" alt="scenic view of lake">
-
-                <img width="1920" height="1080" draggable="false" src="./assets/foreground.webp" alt="guy stood on rock">
+            <div class="hero-parallax">
+                <img id="hero" loading="lazy" draggable="false" src="./assets/parallax/parallax_bg.webp" alt="scenic lake view">
+                <img loading="lazy" draggable="false" src="./assets/parallax/parallax_fg.webp" alt="">
 
                 <h2>nomadic holidays</h2>
             </div>
 
+            <!-- mobile hero background -->
             <div class="mobile-hero">
-                <img fetchpriority="high" width="1920" height="1080" draggable="false" src="./assets/mobile_hero.webp" alt="guy in a scenic view of lake">
+                <img width="1200" height="800" fetchpriority="high" draggable="false" 
+                src="./assets/parallax/mobile_hero_large.webp" 
+                srcset="./assets/parallax/mobile_hero_small.webp 480w,
+                        ./assets/parallax/mobile_hero_medium.webp 800w,
+                        ./assets/parallax/mobile_hero_large.webp 1200w"
+                sizes="100vw"
+                alt="backpacker looking at scenic lake view">
 
                 <h2>nomadic holidays</h2>
             </div>
@@ -49,7 +55,15 @@
             <section>
                 <div class="polaroids">
                     <div class="img-wrapper">
-                        <img fetchpriority="high" width="1920" height="1080" draggable="false" src="./assets/lakeside.webp" alt="cabin in front of a lake">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/polaroids/mountain_cabin_extra_large.webp" 
+                        srcset="./assets/polaroids/mountain_cabin_small.webp 480w,
+                                ./assets/polaroids/mountain_cabin_medium.webp 800w,
+                                ./assets/polaroids/mountain_cabin_large.webp 1200w,
+                                ./assets/polaroids/mountain_cabin_extra_large.webp 1920w"
+                        sizes="(max-width: 986px) 100vw, 
+                                50vw"
+                        alt="cabin in front of a lake">
 
                         <p>beautiful vistas</p>
                     </div>
@@ -73,7 +87,15 @@
                     </div>
 
                     <div class="img-wrapper">
-                        <img width="1920" height="1080" draggable="false" src="./assets/cabin.webp" alt="cabin facing a mountain">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/polaroids/lake_cabin_extra_large.webp" 
+                        srcset="./assets/polaroids/lake_cabin_small.webp 480w,
+                                ./assets/polaroids/lake_cabin_medium.webp 800w,
+                                ./assets/polaroids/lake_cabin_large.webp 1200w,
+                                ./assets/polaroids/lake_cabin_extra_large.webp 1920w"
+                        sizes="(max-width: 986px) 100vw, 
+                                50vw"
+                        alt="cabin facing a mountain">
 
                         <p>relaxing getaway</p>
                     </div>
@@ -86,22 +108,31 @@
                     <button>book now</button>
                 </div>
 
-                <div id="mobile-bg">
+                <div id="book-now-mobile">
                     <button>book now</button>
                 </div>
             </section>
-            
-            <div class="title">
+
+            <!-- Activities -->
+            <div class="activities-title">
                 <h2>Fun for the whole family</h2>
 
                 <p>Choose from a wide range of activities</p>
             </div>
-
-            <!-- Activities -->
+            
             <section>
                 <div class="activities">
                     <div class="card">
-                        <img width="1200" height="800" draggable="false" src="./assets/nature_hike.webp" alt="nature hike">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/activities/hiking_extra_large.webp" 
+                        srcset="./assets/activities/hiking_small.webp 480w,
+                                ./assets/activities/hiking_medium.webp 800w,
+                                ./assets/activities/hiking_large.webp 1200w,
+                                ./assets/activities/hiking_extra_large.webp 1920w"
+                        sizes="(max-width: 865px) 100vw,
+                               (max-width: 1125px) 50vw,
+                               25vw"
+                        alt="nature hike">
 
                         <div class="content">
                             <i class="fa-solid fa-person-hiking"></i>
@@ -111,21 +142,39 @@
                             <p>We offer a variety of hiking trails so you can climb the worlds most beautiful mountain ranges imaginable, camp out and enjoy the surrounding stunning scenery.</p>
                         </div>
                     </div>
-
+                    
                     <div class="card">
-                        <img width="1200" height="800" draggable="false" src="./assets/kayaking.webp" alt="kayaking">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/activities/kayaking_extra_large.webp" 
+                        srcset="./assets/activities/kayaking_small.webp 480w,
+                                ./assets/activities/kayaking_medium.webp 800w,
+                                ./assets/activities/kayaking_large.webp 1200w,
+                                ./assets/activities/kayaking_extra_large.webp 1920w"
+                        sizes="(max-width: 865px) 100vw,
+                               (max-width: 1125px) 50vw,
+                               25vw"
+                        alt="kayaking">
 
                         <div class="content">
                             <i class="fa-solid fa-sailboat"></i>
 
                             <h3>kayaking</h3>
 
-                            <p>Fun for the whole family. We have a variery of kayaking boats on offer, from single to double seats, come and enjoy the calm lakes and rivers of all our holiday destinations.</p>
+                            <p>Fun for the whole family. We have a variety of kayaking boats on offer, come and enjoy the calm serene lakes and rivers of across all of our holiday destinations.</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img width="1200" height="800" draggable="false" src="./assets/mountaineering.webp" alt="mountaineering">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/activities/mountaineering_extra_large.webp" 
+                        srcset="./assets/activities/mountaineering_small.webp 480w,
+                                ./assets/activities/mountaineering_medium.webp 800w,
+                                ./assets/activities/mountaineering_large.webp 1200w,
+                                ./assets/activities/mountaineering_extra_large.webp 1920w"
+                        sizes="(max-width: 865px) 100vw,
+                               (max-width: 1125px) 50vw,
+                               25vw"
+                        alt="mountaineering">
 
                         <div class="content">
                             <i class="fa-solid fa-mountain-sun"></i>
@@ -137,7 +186,16 @@
                     </div>
 
                     <div class="card">
-                        <img width="1200" height="800" draggable="false" src="./assets/paragliding.webp" alt="paragliding">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/activities/paragliding_extra_large.webp" 
+                        srcset="./assets/activities/paragliding_small.webp 480w,
+                                ./assets/activities/paragliding_medium.webp 800w,
+                                ./assets/activities/paragliding_large.webp 1200w,
+                                ./assets/activities/paragliding_extra_large.webp 1920w"
+                        sizes="(max-width: 865px) 100vw,
+                               (max-width: 1125px) 50vw,
+                               25vw"
+                        alt="paragliding">
 
                         <div class="content">
                             <i class="fa-solid fa-paper-plane"></i>
@@ -162,24 +220,25 @@
                 <div class="cabin-rental-wrapper">
                     <div class="cabin-rental">
                         <div class="card">
-                            <img width="1920" height="1080" draggable="false" src="./assets/cabin_affordable.webp" alt="affordable cabin">
-
+                            <img width="1920" height="1080" loading="lazy" draggable="false" 
+                            src="./assets/rental_cabins/cabin_affordable_extra_large.webp" 
+                            srcset="./assets/rental_cabins/cabin_affordable_small.webp 480w,
+                                    ./assets/rental_cabins/cabin_affordable_medium.webp 800w,
+                                    ./assets/rental_cabins/cabin_affordable_large.webp 1200w,
+                                    ./assets/rental_cabins/cabin_affordable_extra_large.webp 1920w"
+                            sizes="(max-width: 605px) 100vw,
+                                   50vw"
+                            alt="affordable cabin">
                             <div class="contents">
                                 <h3>basic | From £500</h3>
 
                                 <div class="icons">
                                     <ul>
-                                        <li>
-                                            <span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
                                     </ul>
                                 </div>
 
@@ -190,28 +249,28 @@
                         </div>
 
                         <div class="card">
-                            <img width="1920" height="1080" draggable="false" src="./assets/cabin_rustic.webp" alt="rustic cabin">
+                            <img width="1920" height="1080" loading="lazy" draggable="false" 
+                            src="./assets/rental_cabins/cabin_rustic_extra_large.webp" 
+                            srcset="./assets/rental_cabins/cabin_rustic_small.webp 480w,
+                                    ./assets/rental_cabins/cabin_rustic_medium.webp 800w,
+                                    ./assets/rental_cabins/cabin_rustic_large.webp 1200w,
+                                    ./assets/rental_cabins/cabin_rustic_extra_large.webp 1920w"
+                            sizes="(max-width: 605px) 100vw,
+                                   50vw"
+                            alt="rustic cabin">
 
                             <div class="contents">
                                 <h3>rustic | from £750</h3>
 
                                 <div class="icons">
                                     <ul>
-                                        <li>
-                                            <span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
                                     </ul>
                                 </div>
 
@@ -222,35 +281,31 @@
                         </div>
 
                         <div class="card">
-                            <img width="1920" height="1080" draggable="false" src="./assets/cabin_deluxe.webp" alt="deluxe cabin">
+                            <img width="1920" height="1080" loading="lazy" draggable="false" 
+                            src="./assets/rental_cabins/cabin_deluxe_extra_large.webp" 
+                            srcset="./assets/rental_cabins/cabin_deluxe_small.webp 480w,
+                                    ./assets/rental_cabins/cabin_deluxe_medium.webp 800w,
+                                    ./assets/rental_cabins/cabin_deluxe_large.webp 1200w,
+                                    ./assets/rental_cabins/cabin_deluxe_extra_large.webp 1920w"
+                            sizes="(max-width: 605px) 100vw,
+                                   50vw"
+                            alt="deluxe cabin">
                             <div class="contents">
                                 <h3>deluxe | from £900</h3>
 
                                 <div class="icons">
                                     <ul>
-                                        <li>
-                                            <span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
 
-                                        <li>
-                                            <span data-tooltip ="1x television"><i class="fa-solid fa-tv"></i></span>
-                                        </li>
+                                        <li><span data-tooltip ="1x television"><i class="fa-solid fa-tv"></i></span></li>
                                     </ul>
                                 </div>
 
@@ -261,30 +316,31 @@
                         </div>
 
                         <div class="card">
-                            <img width="1920" height="1080" draggable="false" src="./assets/cabin_luxury.webp" alt="luxury cabin">
+                            <img width="1920" height="1080" loading="lazy" draggable="false" 
+                            src="./assets/rental_cabins/cabin_luxury_extra_large.webp" 
+                            srcset="./assets/rental_cabins/cabin_luxury_small.webp 480w,
+                                    ./assets/rental_cabins/cabin_luxury_medium.webp 800w,
+                                    ./assets/rental_cabins/cabin_luxury_large.webp 1200w,
+                                    ./assets/rental_cabins/cabin_luxury_extra_large.webp 1920w"
+                            sizes="(max-width: 605px) 100vw,
+                                   50vw"
+                            alt="luxury cabin">
                             <div class="contents">
                                 <h3>luxury | from £1,200</h3>
 
                                 <div class="icons">
                                     <ul>
-                                        <li>
-                                            <span data-tooltip = "2x hot tubs"><i class="fa-solid fa-hot-tub-person"></i></span>
-                                        </li>
-                                        <li>
-                                            <span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span>
-                                        </li>
-                                        <li>
-                                            <span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span>
-                                        </li>
-                                        <li>
-                                            <span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span>
-                                        </li>
-                                        <li>
-                                            <span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span>
-                                        </li>
-                                        <li>
-                                            <span data-tooltip = "3x televisions"><i class="fa-solid fa-tv"></i></span>
-                                        </li>
+                                        <li><span data-tooltip = "2x hot tubs"><i class="fa-solid fa-hot-tub-person"></i></span></li>
+
+                                        <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
+
+                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
+
+                                        <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
+
+                                        <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
+
+                                        <li><span data-tooltip = "3x televisions"><i class="fa-solid fa-tv"></i></span></li>
                                     </ul>
                                 </div>
 
@@ -310,7 +366,14 @@
                     <div class="contact-form">
 
                         <div class="left-section">
-                            <img width="1920" height="1080" src="./assets/contact_form.webp" alt="lakeside town">
+                            <img width="1920" height="1080" loading="lazy" draggable="false" 
+                            src="./assets/contact_form/contact_form_extra_large.webp" 
+                            srcset="./assets/contact_form/contact_form_small.webp 480w,
+                                    ./assets/contact_form/contact_form_medium.webp 800w,
+                                    ./assets/contact_form/contact_form_large.webp 1200w,
+                                    ./assets/contact_form/contact_form_extra_large.webp 1920w"
+                            sizes="100vw"
+                            alt="lakeside town">
                         </div>
 
                         <div class="right-section">
@@ -352,7 +415,6 @@
             <footer>
                 <div class="about">
                     <h2>about</h2>
-
                     <ul>
                         <li>jobs</li>
                         <li>marketing</li>
@@ -362,7 +424,6 @@
                 </div>
                 <div class="reviews">
                     <h2>reviews</h2>
-
                     <ul>
                         <li>glassdoor</li>
                         <li>trip advisor</li>
@@ -371,7 +432,6 @@
                 </div>
                 <div class="blog">
                     <h2>blog</h2>
-
                     <ul>
                         <li>travelSuites</li>
                         <li>holidayMatt</li>
@@ -381,7 +441,6 @@
                 </div>
                 <div class="euma">
                     <h2>EUMA</h2>
-
                     <ul>
                         <li>about</li>
                         <li>members</li>
