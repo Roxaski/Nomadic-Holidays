@@ -254,16 +254,17 @@ body {
 /* Mobile Titles */
 .mobile-title {
     display: none;
-    margin: 100px auto 85px;
+    margin: 100px auto;
     text-align: center;
+    line-height: 2;
 }
 .mobile-title h2 {
     font-weight: 400;
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
 }
 .mobile-title p {
     font-weight: 300;
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: clamp(1.25rem, 3vw, 1.4rem);
 }
 /* Cabin Rentals */
 .cabin-rental-wrapper {
@@ -353,14 +354,15 @@ body {
 .cabin-rental .card .contents .icons ul li:nth-child(even) span::before {
     transform: translateY(5px);
 }
-.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::before,
-.cabin-rental .card .contents .icons ul li:nth-last-child(2) span::before {
+.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::before {
     left: auto;
     right: 0;
 }
-.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::after,
-.cabin-rental .card .contents .icons ul li:nth-last-child(2) span::after {
+.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::after {
     left: -1%;
+}
+.cabin-rental .card .contents .icons ul li:nth-last-child(2) span::after {
+    left: 60%;
 }
 .cabin-rental .card .contents .icons ul li span:hover:before,
 .cabin-rental .card .contents .icons ul li span:hover:after {
@@ -558,6 +560,7 @@ footer ul li {
     }
     .polaroids .text {
         width: 97%;
+        margin-bottom: .5rem;
     }
     .polaroids .text p {
         margin: .15rem;
