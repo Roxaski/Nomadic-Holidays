@@ -26,430 +26,425 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Hero Parallax -->
-        <section>
-            <div class="hero-parallax">
-                <img id="hero" loading="lazy" draggable="false" src="./assets/parallax/parallax_bg.webp" alt="scenic lake view">
-                <img loading="lazy" draggable="false" src="./assets/parallax/parallax_fg.webp" alt="">
+    <!-- Hero Parallax -->
+    <section>
+        <div class="hero-parallax">
+            <img id="hero" loading="lazy" draggable="false" src="./assets/parallax/parallax_bg.webp" alt="scenic lake view">
+            <img loading="lazy" draggable="false" src="./assets/parallax/parallax_fg.webp" alt="">
 
-                <h2>nomadic holidays</h2>
+            <h2>nomadic holidays</h2>
+        </div>
+
+        <!-- mobile hero background -->
+        <div class="mobile-hero">
+            <img width="1200" height="800" fetchpriority="high" draggable="false" 
+            src="./assets/parallax/mobile_hero_large.webp" 
+            srcset="./assets/parallax/mobile_hero_small.webp 480w,
+                    ./assets/parallax/mobile_hero_medium.webp 800w,
+                    ./assets/parallax/mobile_hero_large.webp 1200w"
+            sizes="100vw"
+            alt="backpacker looking at scenic lake view">
+
+            <h2>nomadic holidays</h2>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+        <!-- Polaroids -->
+        <section>
+            <div class="polaroids">
+                <div class="img-wrapper">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/polaroids/mountain_cabin_extra_large.webp" 
+                    srcset="./assets/polaroids/mountain_cabin_small.webp 480w,
+                            ./assets/polaroids/mountain_cabin_medium.webp 800w,
+                            ./assets/polaroids/mountain_cabin_large.webp 1200w,
+                            ./assets/polaroids/mountain_cabin_extra_large.webp 1920w"
+                    sizes="(max-width: 986px) 100vw, 
+                            50vw"
+                    alt="cabin in front of a lake">
+
+                    <p>beautiful vistas</p>
+                </div>
+
+                <div class="text">
+                    <h2>cabin retreats</h2>
+
+                    <p>We have a wide variety of cabins available, ranging from luxurious to rustic. We also offer a variety of activities for you to enjoy, be it with friends family or, or if your more of a lone wolf we have something for you to. Kayaking, walking trails, mountain climbing and much more.</p>
+
+                    <p id="quote"><span>''</span> This is the most relaxed i've felt in years <span>''</span></p>
+                </div>
             </div>
 
-            <!-- mobile hero background -->
-            <div class="mobile-hero">
-                <img width="1200" height="800" fetchpriority="high" draggable="false" 
-                src="./assets/parallax/mobile_hero_large.webp" 
-                srcset="./assets/parallax/mobile_hero_small.webp 480w,
-                        ./assets/parallax/mobile_hero_medium.webp 800w,
-                        ./assets/parallax/mobile_hero_large.webp 1200w"
-                sizes="100vw"
-                alt="backpacker looking at scenic lake view">
+            <div class="polaroids">
+                <div class="text">
+                    <h2>gorgeous vistas</h2>
 
-                <h2>nomadic holidays</h2>
+                    <p>If you like rural getaways where you can rest and relax while being close to nature, then look no further than exclusive cabins centered around the most beautiful views from around the world, breathe in that alpine air while relaxing and soaking in all that rural beauty.</p>
+
+                    <p id="quote"><span>''</span> This is the best holiday i've ever been on <span>''</span></p>
+                </div>
+
+                <div class="img-wrapper">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/polaroids/lake_cabin_extra_large.webp" 
+                    srcset="./assets/polaroids/lake_cabin_small.webp 480w,
+                            ./assets/polaroids/lake_cabin_medium.webp 800w,
+                            ./assets/polaroids/lake_cabin_large.webp 1200w,
+                            ./assets/polaroids/lake_cabin_extra_large.webp 1920w"
+                    sizes="(max-width: 986px) 100vw, 
+                            50vw"
+                    alt="cabin facing a mountain">
+
+                    <p>relaxing getaway</p>
+                </div>
             </div>
         </section>
 
-        <div class="content-wrapper">
-            <!-- Polaroids -->
-            <section>
-                <div class="polaroids">
-                    <div class="img-wrapper">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/polaroids/mountain_cabin_extra_large.webp" 
-                        srcset="./assets/polaroids/mountain_cabin_small.webp 480w,
-                                ./assets/polaroids/mountain_cabin_medium.webp 800w,
-                                ./assets/polaroids/mountain_cabin_large.webp 1200w,
-                                ./assets/polaroids/mountain_cabin_extra_large.webp 1920w"
-                        sizes="(max-width: 986px) 100vw, 
-                                50vw"
-                        alt="cabin in front of a lake">
-
-                        <p>beautiful vistas</p>
-                    </div>
-
-                    <div class="text">
-                        <h2>cabin retreats</h2>
-
-                        <p>We have a wide variety of cabins available, ranging from luxurious to rustic. We also offer a variety of activities for you to enjoy, be it with friends family or, or if your more of a lone wolf we have something for you to. Kayaking, walking trails, mountain climbing and much more.</p>
-
-                        <p id="quote"><span>''</span> This is the most relaxed i've felt in years <span>''</span></p>
-                    </div>
-                </div>
-
-                <div class="polaroids">
-                    <div class="text">
-                        <h2>gorgeous vistas</h2>
-
-                        <p>If you like rural getaways where you can rest and relax while being close to nature, then look no further than exclusive cabins centered around the most beautiful views from around the world, breathe in that alpine air while relaxing and soaking in all that rurual beauty.</p>
-
-                        <p id="quote"><span>''</span> This is the best holiday i've ever been on <span>''</span></p>
-                    </div>
-
-                    <div class="img-wrapper">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/polaroids/lake_cabin_extra_large.webp" 
-                        srcset="./assets/polaroids/lake_cabin_small.webp 480w,
-                                ./assets/polaroids/lake_cabin_medium.webp 800w,
-                                ./assets/polaroids/lake_cabin_large.webp 1200w,
-                                ./assets/polaroids/lake_cabin_extra_large.webp 1920w"
-                        sizes="(max-width: 986px) 100vw, 
-                                50vw"
-                        alt="cabin facing a mountain">
-
-                        <p>relaxing getaway</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Book Now Parallax -->
-            <section>
-                <div id="book-now">
-                    <button>book now</button>
-                </div>
-
-                <div id="book-now-mobile">
-                    <button>book now</button>
-                </div>
-            </section>
-
-            <!-- Activities -->
-            <div class="activities-title">
-                <h2>Fun for the whole family</h2>
-
-                <p>Choose from a wide range of activities</p>
-            </div>
-            
-            <section>
-                <div class="activities">
-                    <div class="card">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/activities/hiking_extra_large.webp" 
-                        srcset="./assets/activities/hiking_small.webp 480w,
-                                ./assets/activities/hiking_medium.webp 800w,
-                                ./assets/activities/hiking_large.webp 1200w,
-                                ./assets/activities/hiking_extra_large.webp 1920w"
-                        sizes="(max-width: 865px) 100vw,
-                               (max-width: 1125px) 50vw,
-                               25vw"
-                        alt="nature hike">
-
-                        <div class="content">
-                            <i class="fa-solid fa-person-hiking"></i>
-
-                            <h3>nature hikes</h3>
-
-                            <p>We offer a variety of hiking trails so you can climb the worlds most beautiful mountain ranges imaginable, camp out and enjoy the surrounding stunning scenery.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/activities/kayaking_extra_large.webp" 
-                        srcset="./assets/activities/kayaking_small.webp 480w,
-                                ./assets/activities/kayaking_medium.webp 800w,
-                                ./assets/activities/kayaking_large.webp 1200w,
-                                ./assets/activities/kayaking_extra_large.webp 1920w"
-                        sizes="(max-width: 865px) 100vw,
-                               (max-width: 1125px) 50vw,
-                               25vw"
-                        alt="kayaking">
-
-                        <div class="content">
-                            <i class="fa-solid fa-sailboat"></i>
-
-                            <h3>kayaking</h3>
-
-                            <p>Fun for the whole family. We have a variety of kayaking boats on offer, come and enjoy the calm serene lakes and rivers of across all of our holiday destinations.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/activities/mountaineering_extra_large.webp" 
-                        srcset="./assets/activities/mountaineering_small.webp 480w,
-                                ./assets/activities/mountaineering_medium.webp 800w,
-                                ./assets/activities/mountaineering_large.webp 1200w,
-                                ./assets/activities/mountaineering_extra_large.webp 1920w"
-                        sizes="(max-width: 865px) 100vw,
-                               (max-width: 1125px) 50vw,
-                               25vw"
-                        alt="mountaineering">
-
-                        <div class="content">
-                            <i class="fa-solid fa-mountain-sun"></i>
-
-                            <h3>Mountaineering</h3>
-
-                            <p>We have a variety of climbing gear on offer. You will to be able to climb and experience the thrill of climbing some of the worlds most incredible mountainous ranges.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img width="1920" height="1080" loading="lazy" draggable="false" 
-                        src="./assets/activities/paragliding_extra_large.webp" 
-                        srcset="./assets/activities/paragliding_small.webp 480w,
-                                ./assets/activities/paragliding_medium.webp 800w,
-                                ./assets/activities/paragliding_large.webp 1200w,
-                                ./assets/activities/paragliding_extra_large.webp 1920w"
-                        sizes="(max-width: 865px) 100vw,
-                               (max-width: 1125px) 50vw,
-                               25vw"
-                        alt="paragliding">
-
-                        <div class="content">
-                            <i class="fa-solid fa-paper-plane"></i>
-
-                            <h3>paragliding</h3>
-
-                            <p>Feel the wind on your face as you paraglide through the most beautiful vistas you can ever imagine, go at it alone or with a friend, there's nothing quite like it.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mobile Only Title -->
-            <div class="mobile-title">
-                <h2>Wide range of cabins</h2>
-
-                <p>Pick a cabin that's best suited for you</p>
+        <!-- Book Now Parallax -->
+        <section>
+            <div id="book-now">
+                <button>book now</button>
             </div>
 
-            <!-- Rental Cabins -->
-            <section>
-                <div class="cabin-rental-wrapper">
-                    <div class="cabin-rental">
-                        <div class="card">
-                            <img width="1920" height="1080" loading="lazy" draggable="false" 
-                            src="./assets/rental_cabins/cabin_affordable_extra_large.webp" 
-                            srcset="./assets/rental_cabins/cabin_affordable_small.webp 480w,
-                                    ./assets/rental_cabins/cabin_affordable_medium.webp 800w,
-                                    ./assets/rental_cabins/cabin_affordable_large.webp 1200w,
-                                    ./assets/rental_cabins/cabin_affordable_extra_large.webp 1920w"
-                            sizes="(max-width: 605px) 100vw,
-                                   50vw"
-                            alt="affordable cabin">
-                            <div class="contents">
-                                <h3>basic | From £500</h3>
-
-                                <div class="icons">
-                                    <ul>
-                                        <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
-
-                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
-
-                                        <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
-                                    </ul>
-                                </div>
-
-                                <p>On the market for a cabin without all the amenities of home, then look no further than our authentic experience of cabin life, we offer a single bedroom cabin with a lovely bathroom and kitchen, and the best part is the incredible view that stretches, as far as the eye can see.</p>
-
-                                <button>book now</button>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img width="1920" height="1080" loading="lazy" draggable="false" 
-                            src="./assets/rental_cabins/cabin_rustic_extra_large.webp" 
-                            srcset="./assets/rental_cabins/cabin_rustic_small.webp 480w,
-                                    ./assets/rental_cabins/cabin_rustic_medium.webp 800w,
-                                    ./assets/rental_cabins/cabin_rustic_large.webp 1200w,
-                                    ./assets/rental_cabins/cabin_rustic_extra_large.webp 1920w"
-                            sizes="(max-width: 605px) 100vw,
-                                   50vw"
-                            alt="rustic cabin">
-
-                            <div class="contents">
-                                <h3>rustic | from £750</h3>
-
-                                <div class="icons">
-                                    <ul>
-                                        <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
-
-                                        <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
-
-                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
-
-                                        <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
-                                    </ul>
-                                </div>
-
-                                <p>Prefer the rustic feel of a cabin, if so then look no further than our range of rustic cabins. They are fully furnished with everything you would expect from a range of kitchen appliances to a moderately sized hot tub for you to enjoy, what a better way to spend a weekend.</p>
-
-                                <button>book now</button>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img width="1920" height="1080" loading="lazy" draggable="false" 
-                            src="./assets/rental_cabins/cabin_deluxe_extra_large.webp" 
-                            srcset="./assets/rental_cabins/cabin_deluxe_small.webp 480w,
-                                    ./assets/rental_cabins/cabin_deluxe_medium.webp 800w,
-                                    ./assets/rental_cabins/cabin_deluxe_large.webp 1200w,
-                                    ./assets/rental_cabins/cabin_deluxe_extra_large.webp 1920w"
-                            sizes="(max-width: 605px) 100vw,
-                                   50vw"
-                            alt="deluxe cabin">
-                            <div class="contents">
-                                <h3>deluxe | from £900</h3>
-
-                                <div class="icons">
-                                    <ul>
-                                        <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
-
-                                        <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
-
-                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
-
-                                        <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
-
-                                        <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
-
-                                        <li><span data-tooltip ="1x television"><i class="fa-solid fa-tv"></i></span></li>
-                                    </ul>
-                                </div>
-
-                                <p>Want a premium stay with incredible views and all the comfort of your home but at a more affordable pricing, then look no further than our deluxe cabins.  Everything you could ever possibly want and need is right here. It's a great relaxing getaway for you and for your whole family.</p>
-
-                                <button>book now</button>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img width="1920" height="1080" loading="lazy" draggable="false" 
-                            src="./assets/rental_cabins/cabin_luxury_extra_large.webp" 
-                            srcset="./assets/rental_cabins/cabin_luxury_small.webp 480w,
-                                    ./assets/rental_cabins/cabin_luxury_medium.webp 800w,
-                                    ./assets/rental_cabins/cabin_luxury_large.webp 1200w,
-                                    ./assets/rental_cabins/cabin_luxury_extra_large.webp 1920w"
-                            sizes="(max-width: 605px) 100vw,
-                                   50vw"
-                            alt="luxury cabin">
-                            <div class="contents">
-                                <h3>luxury | from £1,200</h3>
-
-                                <div class="icons">
-                                    <ul>
-                                        <li><span data-tooltip = "2x hot tubs"><i class="fa-solid fa-hot-tub-person"></i></span></li>
-
-                                        <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
-
-                                        <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
-
-                                        <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
-
-                                        <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
-
-                                        <li><span data-tooltip = "3x televisions"><i class="fa-solid fa-tv"></i></span></li>
-                                    </ul>
-                                </div>
-
-                                <p>Fancy yourself spending a weekend in a luxurious cabin then look no further, offering all of the latest kitchen appliances along with all best the furnishings across every one of our two floor cabins. Relax in the hot tub while soaking in that gorgeous view, this is an experience you do not want to miss out on.</p>
-
-                                <button>book now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mobile Only Title -->
-            <div class="mobile-title">
-                <h2>Get in touch with us</h2>
-
-                <p>Our team is always on hand to help</p>
+            <div id="book-now-mobile">
+                <button>book now</button>
             </div>
+        </section>
 
-            <!-- Contact Form -->
-            <section>
-                <div class="form-container">
-                    <div class="contact-form">
-
-                        <div class="left-section">
-                            <img width="1920" height="1080" loading="lazy" draggable="false" 
-                            src="./assets/contact_form/contact_form_extra_large.webp" 
-                            srcset="./assets/contact_form/contact_form_small.webp 480w,
-                                    ./assets/contact_form/contact_form_medium.webp 800w,
-                                    ./assets/contact_form/contact_form_large.webp 1200w,
-                                    ./assets/contact_form/contact_form_extra_large.webp 1920w"
-                            sizes="100vw"
-                            alt="lakeside town">
-                        </div>
-
-                        <div class="right-section">
-                            <h2>contact form</h2>
-
-                            <form action="#">
-                                <div class="input-box">
-                                    <label for="name">
-                                        <input autocomplete="given-name" id="name" type="text" placeholder="Name">
-                                    </label>
-                                </div>
-
-                                <div class="input-box">
-                                    <label for="phone_number">
-                                        <input id="phone_number" type="text" placeholder="Phone">
-                                    </label>
-                                </div>
-
-                                <div class="input-box">
-                                    <label for="email">
-                                        <input autocomplete="email" id="email" type="text" placeholder="Email">
-                                    </label>
-                                </div>
-
-                                <div class="input-box message-box">
-                                    <label for="user_message">
-                                        <textarea id="user_message" maxlength="500" placeholder="Insert your message here"></textarea>
-                                    </label>
-                                </div>
-
-                                <button type="button">submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer>
-                <div class="about">
-                    <h2>about</h2>
-                    <ul>
-                        <li>jobs</li>
-                        <li>marketing</li>
-                        <li>payment methods</li>
-                        <li>design & branding</li>
-                    </ul>
-                </div>
-                <div class="reviews">
-                    <h2>reviews</h2>
-                    <ul>
-                        <li>glassdoor</li>
-                        <li>trip advisor</li>
-                        <li>trustpilot</li>
-                    </ul>
-                </div>
-                <div class="blog">
-                    <h2>blog</h2>
-                    <ul>
-                        <li>travelSuites</li>
-                        <li>holidayMatt</li>
-                        <li>vickiDoesHolidays</li>
-                        <li>blogs & thoughts</li>
-                    </ul>
-                </div>
-                <div class="euma">
-                    <h2>EUMA</h2>
-                    <ul>
-                        <li>about</li>
-                        <li>members</li>
-                        <li>navigation</li>
-                        <li>mapping tool</li>
-                    </ul>
-                </div>
-            </footer>
+        <!-- Activities -->
+        <div class="activities-title">
+            <h2>Fun for the whole family</h2>
+            <p>Choose from a wide range of activities</p>
         </div>
+        
+        <section>
+            <div class="activities">
+                <div class="card">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/activities/hiking_extra_large.webp" 
+                    srcset="./assets/activities/hiking_small.webp 480w,
+                            ./assets/activities/hiking_medium.webp 800w,
+                            ./assets/activities/hiking_large.webp 1200w,
+                            ./assets/activities/hiking_extra_large.webp 1920w"
+                    sizes="(max-width: 865px) 100vw,
+                            (max-width: 1125px) 50vw,
+                            25vw"
+                    alt="nature hike">
+
+                    <div class="content">
+                        <i class="fa-solid fa-person-hiking"></i>
+
+                        <h3>nature hikes</h3>
+
+                        <p>We offer a variety of hiking trails so you can climb the worlds most beautiful mountain ranges imaginable, camp out and enjoy the surrounding stunning scenery.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/activities/kayaking_extra_large.webp" 
+                    srcset="./assets/activities/kayaking_small.webp 480w,
+                            ./assets/activities/kayaking_medium.webp 800w,
+                            ./assets/activities/kayaking_large.webp 1200w,
+                            ./assets/activities/kayaking_extra_large.webp 1920w"
+                    sizes="(max-width: 865px) 100vw,
+                            (max-width: 1125px) 50vw,
+                            25vw"
+                    alt="kayaking">
+
+                    <div class="content">
+                        <i class="fa-solid fa-sailboat"></i>
+
+                        <h3>kayaking</h3>
+
+                        <p>Fun for the whole family. We have a variety of kayaking boats on offer, come and enjoy the calm serene lakes and rivers of across all of our holiday destinations.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/activities/mountaineering_extra_large.webp" 
+                    srcset="./assets/activities/mountaineering_small.webp 480w,
+                            ./assets/activities/mountaineering_medium.webp 800w,
+                            ./assets/activities/mountaineering_large.webp 1200w,
+                            ./assets/activities/mountaineering_extra_large.webp 1920w"
+                    sizes="(max-width: 865px) 100vw,
+                            (max-width: 1125px) 50vw,
+                            25vw"
+                    alt="mountaineering">
+
+                    <div class="content">
+                        <i class="fa-solid fa-mountain-sun"></i>
+
+                        <h3>Mountaineering</h3>
+
+                        <p>We have a variety of climbing gear on offer. You will to be able to climb and experience the thrill of climbing some of the worlds most incredible mountainous ranges.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img width="1920" height="1080" loading="lazy" draggable="false" 
+                    src="./assets/activities/paragliding_extra_large.webp" 
+                    srcset="./assets/activities/paragliding_small.webp 480w,
+                            ./assets/activities/paragliding_medium.webp 800w,
+                            ./assets/activities/paragliding_large.webp 1200w,
+                            ./assets/activities/paragliding_extra_large.webp 1920w"
+                    sizes="(max-width: 865px) 100vw,
+                            (max-width: 1125px) 50vw,
+                            25vw"
+                    alt="paragliding">
+
+                    <div class="content">
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        <h3>paragliding</h3>
+
+                        <p>Feel the wind on your face as you paraglide through the most beautiful vistas you can ever imagine, go at it alone or with a friend, there's nothing quite like it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Only Title -->
+        <div class="mobile-title">
+            <h2>Wide range of cabins</h2>
+            <p>Pick a cabin that's best suited for you</p>
+        </div>
+
+        <!-- Rental Cabins -->
+        <section>
+            <div class="cabin-rental-wrapper">
+                <div class="cabin-rental">
+                    <div class="card">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/rental_cabins/cabin_affordable_extra_large.webp" 
+                        srcset="./assets/rental_cabins/cabin_affordable_small.webp 480w,
+                                ./assets/rental_cabins/cabin_affordable_medium.webp 800w,
+                                ./assets/rental_cabins/cabin_affordable_large.webp 1200w,
+                                ./assets/rental_cabins/cabin_affordable_extra_large.webp 1920w"
+                        sizes="(max-width: 605px) 100vw,
+                                50vw"
+                        alt="affordable cabin">
+                        <div class="contents">
+                            <h3>basic | From £500</h3>
+
+                            <div class="icons">
+                                <ul>
+                                    <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
+
+                                    <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
+
+                                    <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
+                                </ul>
+                            </div>
+
+                            <p>On the market for a cabin without all the amenities of home, then look no further than our authentic experience of cabin life, we offer a single bedroom cabin with a lovely bathroom and kitchen, and the best part is the incredible view that stretches, as far as the eye can see.</p>
+
+                            <button>book now</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/rental_cabins/cabin_rustic_extra_large.webp" 
+                        srcset="./assets/rental_cabins/cabin_rustic_small.webp 480w,
+                                ./assets/rental_cabins/cabin_rustic_medium.webp 800w,
+                                ./assets/rental_cabins/cabin_rustic_large.webp 1200w,
+                                ./assets/rental_cabins/cabin_rustic_extra_large.webp 1920w"
+                        sizes="(max-width: 605px) 100vw,
+                                50vw"
+                        alt="rustic cabin">
+
+                        <div class="contents">
+                            <h3>rustic | from £750</h3>
+
+                            <div class="icons">
+                                <ul>
+                                    <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
+
+                                    <li><span data-tooltip = "1x shower"><i class="fa-solid fa-shower"></i></span></li>
+
+                                    <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
+
+                                    <li><span data-tooltip = "1x bedroom"><i class="fa-solid fa-bed"></i></span></li>
+                                </ul>
+                            </div>
+
+                            <p>Prefer the rustic feel of a cabin, if so then look no further than our range of rustic cabins. They are fully furnished with everything you would expect from a range of kitchen appliances to a moderately sized hot tub for you to enjoy, what a better way to spend a weekend.</p>
+
+                            <button>book now</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/rental_cabins/cabin_deluxe_extra_large.webp" 
+                        srcset="./assets/rental_cabins/cabin_deluxe_small.webp 480w,
+                                ./assets/rental_cabins/cabin_deluxe_medium.webp 800w,
+                                ./assets/rental_cabins/cabin_deluxe_large.webp 1200w,
+                                ./assets/rental_cabins/cabin_deluxe_extra_large.webp 1920w"
+                        sizes="(max-width: 605px) 100vw,
+                                50vw"
+                        alt="deluxe cabin">
+                        <div class="contents">
+                            <h3>deluxe | from £900</h3>
+
+                            <div class="icons">
+                                <ul>
+                                    <li><span data-tooltip = "1x hot tub"><i class="fa-solid fa-hot-tub-person"></i></span></li>
+
+                                    <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
+
+                                    <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
+
+                                    <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
+
+                                    <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
+
+                                    <li><span data-tooltip ="1x television"><i class="fa-solid fa-tv"></i></span></li>
+                                </ul>
+                            </div>
+
+                            <p>Want a premium stay with incredible views and all the comfort of your home but at a more affordable pricing, then look no further than our deluxe cabins.  Everything you could ever possibly want and need is right here. It's a great relaxing getaway for you and for your whole family.</p>
+
+                            <button>book now</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/rental_cabins/cabin_luxury_extra_large.webp" 
+                        srcset="./assets/rental_cabins/cabin_luxury_small.webp 480w,
+                                ./assets/rental_cabins/cabin_luxury_medium.webp 800w,
+                                ./assets/rental_cabins/cabin_luxury_large.webp 1200w,
+                                ./assets/rental_cabins/cabin_luxury_extra_large.webp 1920w"
+                        sizes="(max-width: 605px) 100vw,
+                                50vw"
+                        alt="luxury cabin">
+                        <div class="contents">
+                            <h3>luxury | from £1,200</h3>
+
+                            <div class="icons">
+                                <ul>
+                                    <li><span data-tooltip = "2x hot tubs"><i class="fa-solid fa-hot-tub-person"></i></span></li>
+
+                                    <li><span data-tooltip = "2x bathrooms"><i class="fa-solid fa-bath"></i></span></li>
+
+                                    <li><span data-tooltip = "1x kitchen"><i class="fa-solid fa-fire-burner"></i></span></li>
+
+                                    <li><span data-tooltip = "2x appliances"><i class="fa-solid fa-kitchen-set"></i></span></li>
+
+                                    <li><span data-tooltip = "2x bedrooms"><i class="fa-solid fa-bed"></i></span></li>
+
+                                    <li><span data-tooltip = "3x televisions"><i class="fa-solid fa-tv"></i></span></li>
+                                </ul>
+                            </div>
+
+                            <p>Fancy yourself spending a weekend in a luxurious cabin then look no further, offering all of the latest kitchen appliances along with all best the furnishings across every one of our two floor cabins. Relax in the hot tub while soaking in that gorgeous view, this is an experience you do not want to miss out on.</p>
+
+                            <button>book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Only Title -->
+        <div class="mobile-title">
+            <h2>Get in touch with us</h2>
+            <p>Our team is always on hand to help</p>
+        </div>
+
+        <!-- Contact Form -->
+        <section>
+            <div class="form-container">
+                <div class="contact-form">
+
+                    <div class="left-section">
+                        <img width="1920" height="1080" loading="lazy" draggable="false" 
+                        src="./assets/contact_form/contact_form_extra_large.webp" 
+                        srcset="./assets/contact_form/contact_form_small.webp 480w,
+                                ./assets/contact_form/contact_form_medium.webp 800w,
+                                ./assets/contact_form/contact_form_large.webp 1200w,
+                                ./assets/contact_form/contact_form_extra_large.webp 1920w"
+                        sizes="100vw"
+                        alt="lakeside town">
+                    </div>
+
+                    <div class="right-section">
+                        <h2>contact form</h2>
+
+                        <form action="#">
+                            <div class="input-box">
+                                <label for="name">
+                                    <input autocomplete="given-name" id="name" type="text" placeholder="Name">
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="phone_number">
+                                    <input id="phone_number" type="text" placeholder="Phone">
+                                </label>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="email">
+                                    <input autocomplete="email" id="email" type="text" placeholder="Email">
+                                </label>
+                            </div>
+
+                            <div class="input-box message-box">
+                                <label for="user_message">
+                                    <textarea id="user_message" maxlength="500" placeholder="Insert your message here"></textarea>
+                                </label>
+                            </div>
+
+                            <button type="button">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="about">
+                <h2>about</h2>
+                <ul>
+                    <li>jobs</li>
+                    <li>marketing</li>
+                    <li>payment methods</li>
+                    <li>design & branding</li>
+                </ul>
+            </div>
+            <div class="reviews">
+                <h2>reviews</h2>
+                <ul>
+                    <li>glassdoor</li>
+                    <li>trip advisor</li>
+                    <li>trustpilot</li>
+                </ul>
+            </div>
+            <div class="blog">
+                <h2>blog</h2>
+                <ul>
+                    <li>travelSuites</li>
+                    <li>holidayMatt</li>
+                    <li>vickiDoesHolidays</li>
+                    <li>blogs & thoughts</li>
+                </ul>
+            </div>
+            <div class="euma">
+                <h2>EUMA</h2>
+                <ul>
+                    <li>about</li>
+                    <li>members</li>
+                    <li>navigation</li>
+                    <li>mapping tool</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

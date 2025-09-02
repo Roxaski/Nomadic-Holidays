@@ -254,7 +254,7 @@ body {
 /* Mobile Titles */
 .mobile-title {
     display: none;
-    margin: 50px auto 0;
+    margin: 100px auto 85px;
     text-align: center;
 }
 .mobile-title h2 {
@@ -323,7 +323,7 @@ body {
 .cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
     position: absolute;
-    top: -2.9rem;
+    top: -3.2rem;
     width: 6.5rem;
     height: auto;
     font-size: clamp(.8rem, 3vw, .85rem);
@@ -338,7 +338,7 @@ body {
 .cabin-rental .card .contents .icons ul li span::after {
     content: '';
     position: absolute;
-    top: -1rem;
+    top: -1.35rem;
     left: 35%;
     width: 0;
     height: 0;
@@ -352,6 +352,15 @@ body {
 }
 .cabin-rental .card .contents .icons ul li:nth-child(even) span::before {
     transform: translateY(5px);
+}
+.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::before,
+.cabin-rental .card .contents .icons ul li:nth-last-child(2) span::before {
+    left: auto;
+    right: 0;
+}
+.cabin-rental .card .contents .icons ul li:nth-last-child(1) span::after,
+.cabin-rental .card .contents .icons ul li:nth-last-child(2) span::after {
+    left: -1%;
 }
 .cabin-rental .card .contents .icons ul li span:hover:before,
 .cabin-rental .card .contents .icons ul li span:hover:after {
@@ -426,13 +435,14 @@ body {
     margin: 5px auto;
 }
 .contact-form .right-section .input-box input,
-.contact-form .right-section .message-box textarea {
+.contact-form .right-section .message-box textarea,
+.contact-form .right-section button {
     width: 100%;
-    height: 40px;
-    margin: 5px auto;
+    margin: 3px auto;
     border: none;
     outline: none;
     border-radius: 2px;
+    height: 40px;
     padding: 5px 5px;
     font-size: 1rem;
     background-color: var(--clr-white);
@@ -442,10 +452,7 @@ body {
     resize: none;
 }
 .contact-form .right-section button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: .25rem 1rem;
+    margin: 0 auto 10px;
     letter-spacing: .5px;
     color: var(--clr-blk);
     background-color: var(--clr-white);
@@ -453,15 +460,13 @@ body {
     border: none;
     outline: none;
     text-transform: uppercase;
-    transition: 250ms ease-out;
-    width: 100%;
 }
 /* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: flex-start;
-    padding: 1rem 2.35rem;
+    padding: 1rem 1.8rem;
     color: var(--clr-white);
     background-color: var(--clr-grey);
 }
@@ -503,11 +508,6 @@ footer ul li {
     }
 }
 @media screen and (max-width: 1125px) {
-    .activities {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-        width: 95%;
-    }
     .cabin-rental-wrapper {
         background-image: url(./assets/rental_cabins/cabin_rental_bg_large.webp);
     }
@@ -545,10 +545,10 @@ footer ul li {
         margin: 20px auto;
     }
     .polaroids .img-wrapper:nth-child(1) {
-        padding: 0 1rem;
+        padding: 0 .75rem;
     }
     .polaroids .img-wrapper:nth-child(2) {
-        padding: 0 1rem;
+        padding: 0 .75rem;
     }
     .polaroids .img-wrapper:nth-child(1) p {
         bottom: 1.1rem;
@@ -557,17 +557,16 @@ footer ul li {
         bottom: 1.1rem;
     }
     .polaroids .text {
-        width: 95%;
+        width: 97%;
     }
     .polaroids .text p {
         margin: .15rem;
     }
     .polaroids .text:nth-child(1) {
-        padding-left: 1rem;
-        margin-bottom: 1rem;
+        padding: 0 .75rem;
     }
     .polaroids .text:nth-child(2) {
-        padding-left: 1rem;
+        padding: 0 .75rem;
     }
     .polaroids .text h2 {
         margin: 10px 0 0 0;
@@ -576,18 +575,18 @@ footer ul li {
         display: none;
     }
     .mobile-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        display: block;
+    }
+    .activities {
+        grid-template-columns: repeat(2, 1fr);
+        padding: .75rem;
     }
     .cabin-rental-wrapper {
         background-image: none;
     }
     .cabin-rental {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 95%;
+        padding: .75rem;
+        width: 100%;
     }
     .cabin-rental .card {
         border: none;
@@ -595,8 +594,8 @@ footer ul li {
     .cabin-rental .card .contents .icons span {
         font-size: 1.025rem;
     }
-    .cabin-rental button {
-        font-size: clamp(1.1rem, 3vw, 1.2rem);
+    .form-container {
+        padding: .75rem;
     }
     .contact-form {
         margin: 0 auto;
@@ -605,53 +604,29 @@ footer ul li {
     .contact-form .left-section {
         padding: .5rem;
     }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 0;
+        padding: 1rem 1.5rem;
+    }
 }
 @media screen and (max-width: 865px) {
     .activities {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 .8rem;
     }
     .cabin-rental {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 2rem .8rem 0 1rem;
-    }
-    footer {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 0;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media screen and (max-width: 605px) {
-    .activities {
-        padding: 0 .2rem;
-    }
-    .cabin-rental {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2rem .2rem;
-    }
-    .form-container {
-        padding: 1rem;
-    }
     footer {
         grid-template-columns: repeat(1, 1fr);
-        gap: 1rem 0;
-        padding: 2rem 1.5rem;
     }
 }
-@media screen and (max-width: 500px) {
-    .mobile-hero h2 {
-        max-width: 45%;
-        padding: .5rem;
-    }
-    .activities-title,
-    .mobile-title {
-        width: 85%;
-        margin: 50px auto;
-    }
-    .cabin-rental {
-        padding: 0 .2rem;
-    }
-    .form-container {
-        padding: 0 1rem 2rem 1rem;
+@media screen and (max-width: 335px) {
+    .cabin-rental .card .contents .icons span {
+        font-size: .9rem;
+        margin-right: 1.1rem;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 1200px) {
