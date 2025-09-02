@@ -626,6 +626,11 @@ footer ul li {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media screen and (max-width: 465px) {
+    .mobile-title {
+        max-width: 85%;
+    }
+}
 @media screen and (max-width: 335px) {
     .cabin-rental .card .contents .icons span {
         font-size: .9rem;
