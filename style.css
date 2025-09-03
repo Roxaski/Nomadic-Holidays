@@ -445,7 +445,7 @@ body {
     outline: none;
     border-radius: 2px;
     height: 40px;
-    padding: 5px 5px;
+    padding: 5px;
     font-size: 1rem;
     background-color: var(--clr-white);
 }
@@ -455,6 +455,8 @@ body {
 }
 .contact-form .right-section button {
     margin: 0 auto 10px;
+    height: 30px;
+    font-size: .9rem;
     letter-spacing: .5px;
     color: var(--clr-blk);
     background-color: var(--clr-white);
