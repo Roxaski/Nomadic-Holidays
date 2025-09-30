@@ -59,7 +59,6 @@ body {
     background-color: var(--clr-green);
     border-radius: 5px;
 }
-/* Parallax Hero */
 .hero-parallax {
     height: 100vh;
     width: 100%;
@@ -97,12 +96,10 @@ body {
 .mobile-hero {
     display: none;
 }
-/*Content Wrapper */
 .content-wrapper {
     max-width: 90rem;
     margin: 0 auto;
 }
-/* Polaroids */
 .polaroids {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -170,7 +167,6 @@ body {
     font-family: 'Whisper', cursive;
     font-weight: 500;
 }
-/* Book Now Parallax */
 #book-now {
     padding: 2rem;
     background-image: url(./assets/book_now/banner_extra_large.webp);
@@ -192,7 +188,6 @@ body {
 #book-now-mobile button {
     display: none;
 }
-/* Activities */
 .activities-title {
     display: flex;
     align-items: center;
@@ -251,7 +246,6 @@ body {
     font-size: .95rem;
     line-height: 1.7;
 }
-/* Mobile Titles */
 .mobile-title {
     display: none;
     margin: 100px auto;
@@ -266,7 +260,6 @@ body {
     font-weight: 300;
     font-size: clamp(1.25rem, 3vw, 1.4rem);
 }
-/* Cabin Rentals */
 .cabin-rental-wrapper {
     background-image: url(./assets/rental_cabins/cabin_rental_bg_extra_large.webp);
     background-attachment: fixed;
@@ -399,7 +392,6 @@ body {
     text-transform: uppercase;
     width: 100%;
 }
-/* Contact Form */
 .form-container {
     padding: 1.5rem;
 }
@@ -465,7 +457,6 @@ body {
     outline: none;
     text-transform: uppercase;
 }
-/* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -487,7 +478,6 @@ footer ul li {
     list-style: none;
     margin: 10px auto;
 }
-/* Media Query's */
 @media screen and (max-width: 1275px) {
     #book-now {
         display: none;
@@ -671,7 +661,6 @@ footer ul li {
         width: 100%;
     }
 }
-/* Dark Mode */
 @media screen and (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
         background-color: var(--clr-grey);
