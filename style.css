@@ -434,12 +434,12 @@ body {
     width: 100%;
     margin: 3px auto;
     border: none;
-    outline: none;
     border-radius: 2px;
     height: 40px;
     padding: 5px;
     font-size: 1rem;
     background-color: var(--clr-white);
+    -webkit-tap-highlight-color: transparent;
 }
 .contact-form .right-section .message-box textarea {
     min-height: 135px;
@@ -454,7 +454,6 @@ body {
     background-color: var(--clr-white);
     border-radius: 2px;
     border: none;
-    outline: none;
     text-transform: uppercase;
 }
 footer {
