@@ -678,6 +678,10 @@ footer ul li {
         height: 100%;
         object-fit: cover;
     }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 0;
+    }
 }
 @media screen and (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
