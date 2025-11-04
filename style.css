@@ -665,6 +665,11 @@ footer ul li {
     .form-container {
         width: 100%;
     }
+    .contact-form .left-section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 @media screen and (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
