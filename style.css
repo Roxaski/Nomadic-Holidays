@@ -665,6 +665,13 @@ footer ul li {
     .form-container {
         width: 100%;
     }
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .contact-form .left-section {
+        width: 100%;
+        padding: .5rem;
+    }
     .contact-form .left-section img {
         display: block;
         width: 100%;
