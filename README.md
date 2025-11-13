@@ -1,6 +1,6 @@
 # Nomadic-Holidays
 
-![github_read me](https://github.com/user-attachments/assets/b351348e-6ead-49cf-8472-9264d5a6040f)
+<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/d4ff97db-d2a0-41f0-8a74-86c79a0d9196" />
 
 ## Welcome to Nomadic Holidays
 
