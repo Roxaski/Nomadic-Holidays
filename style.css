@@ -220,26 +220,38 @@ body {
     border-radius: 5px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
-.activities .card .fa-solid {
+.activities .card .icon {
     position: relative;
-    bottom: .15rem;
-    font-size: 1.2rem;
-    color: var(--clr-grey);
+    width: 1.5rem;
+    height: auto;
+    fill: var(--clr-grey);
+}
+.activities .card:nth-child(1) .icon {
+    top: .15rem;
+}
+.activities .card:nth-child(2) .icon {
+    top: .1rem;
+}
+.activities .card:nth-child(3) .icon {
+    top: .32rem;
+}
+.activities .card:nth-child(4) .icon {
+    top: .15rem;
 }
 .activities .card img {
     width: 100%;
     height: auto;
 }
 .activities .card .content {
-    padding: .75rem;
+    padding:  .5rem .75rem .75rem .75rem;
 }
 .activities .card h3 {
     display: inline-block;
     text-transform: capitalize;
     font-size: clamp(1rem, 3vw, 1.075rem);
     font-weight: 400;
-    margin-bottom: .95rem;
-    margin-left: .45rem;
+    margin-bottom: .5rem;
+    margin-left: .25rem;
 }
 .activities .card p  {
     font-weight: 300;
@@ -268,8 +280,7 @@ body {
 }
 .cabin-rental {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 45.5rem;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     gap: 1rem;
     padding: 2rem;
@@ -290,15 +301,21 @@ body {
     border-top-right-radius: 10px;
 }
 .cabin-rental .card .contents {
-    padding: .75rem;
+    padding: 0 .75rem 0.75rem;
     letter-spacing: .5px;
+}
+.cabin-rental .card .contents h2 {
+    font-weight: 500;
+    font-size: clamp(1.15rem, 3vw, 1.3rem);
+    text-transform: capitalize;
+    margin-bottom: .15rem;
 }
 .cabin-rental .card .contents h3 {
     font-size: clamp(1rem, 3vw, 1.025rem);
     text-transform: capitalize;
     font-weight: 400;
     text-align: left;
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
 }
 .cabin-rental .card .contents .icons ul li {
     display: inline-block;
@@ -306,13 +323,13 @@ body {
 .cabin-rental .card .contents .icons span {
     position: relative;
     font-size: .95rem;
-    margin-right: 1.5rem;
+    margin-right: 1.25rem;
 }
 .cabin-rental .card .contents .icons ul li span::before,
 .cabin-rental .card .contents .icons ul li span::after {
     opacity: 0;
     transform: translateY(-10px);
-    transition: 225ms ease;
+    transition: opacity 225ms ease, transform 225ms ease;
 }
 .cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
@@ -342,7 +359,7 @@ body {
     opacity: 0;
 }
 .cabin-rental .card .contents .icons ul li:nth-child(odd) span::before {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 .cabin-rental .card .contents .icons ul li:nth-child(even) span::before {
     transform: translateY(5px);
@@ -355,12 +372,17 @@ body {
     left: -1%;
 }
 .cabin-rental .card .contents .icons ul li:nth-last-child(2) span::after {
-    left: 60%;
+    left: 20%;
 }
 .cabin-rental .card .contents .icons ul li span:hover:before,
 .cabin-rental .card .contents .icons ul li span:hover:after {
     opacity: 1;
     transform: translateY(10px);
+}
+.cabin-rental .card .contents .icon {
+    width: 1.25rem;
+    height: auto;
+    fill: var(--clr-grey);
 }
 .cabin-rental .card .contents p {
     height: 6rem;
@@ -504,6 +526,10 @@ footer ul li {
     .cabin-rental-wrapper {
         background-image: url(./assets/rental_cabins/cabin_rental_bg_large.webp);
     }
+    .activities {
+        grid-template-columns: repeat(2, 1fr);
+        padding: .75rem;
+    }
 }
 @media screen and (max-width: 986px) {
     .hero-parallax {
@@ -570,14 +596,11 @@ footer ul li {
     .mobile-title {
         display: block;
     }
-    .activities {
-        grid-template-columns: repeat(2, 1fr);
-        padding: .75rem;
-    }
     .cabin-rental-wrapper {
         background-image: none;
     }
     .cabin-rental {
+        grid-template-columns: repeat(2, 1fr);
         padding: .75rem;
         width: 100%;
     }
@@ -620,13 +643,13 @@ footer ul li {
         grid-template-columns: 1fr;
     }
 }
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 525px) {
     .mobile-hero h2 {
         width: 45%;
         padding: .5rem;
     }
     .mobile-title {
-        max-width: 85%;
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 335px) {
@@ -710,8 +733,11 @@ footer ul li {
         color: var(--clr-offWhite);
         background: var(--clr-grey);
     }
-    .activities .card .content i {
-        color: var(--clr-offWhite);
+    .activities .card .icon {
+        fill: var(--clr-offWhite);
+    }
+    .cabin-rental .card .contents .icon {
+        fill: var(--clr-offWhite);
     }
     .cabin-rental .card {
         color: var(--clr-offWhite);
