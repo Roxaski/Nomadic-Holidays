@@ -43,8 +43,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--clr-blk);
     background: var(--clr-offWhite);
-    cursor: default;
     overflow-x: hidden;
+    cursor: default;
 }
 ::-webkit-scrollbar {
     width: 13px;
@@ -222,7 +222,7 @@ body {
 }
 .activities .card .icon {
     position: relative;
-    width: 1.5rem;
+    width: 1.4rem;
     height: auto;
     fill: var(--clr-grey);
 }
@@ -243,7 +243,7 @@ body {
     height: auto;
 }
 .activities .card .content {
-    padding:  .5rem .75rem .75rem .75rem;
+    padding: .5rem .75rem .75rem .75rem;
 }
 .activities .card h3 {
     display: inline-block;
@@ -311,7 +311,7 @@ body {
     margin-bottom: .15rem;
 }
 .cabin-rental .card .contents h3 {
-    font-size: clamp(1rem, 3vw, 1.025rem);
+    font-size: 1rem;
     text-transform: capitalize;
     font-weight: 400;
     text-align: left;
@@ -415,7 +415,7 @@ body {
     width: 100%;
 }
 .form-container {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 .contact-form {
     display: grid;
