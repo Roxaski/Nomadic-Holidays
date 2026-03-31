@@ -1,31 +1,44 @@
 const hero = document.getElementById('hero');
 const bookNow = document.getElementById('book-now');
 
-// flag to prevent multiple requestAnimationFrames from stacking up
+// prevents requestAnimationFrames from stacking up
 let animationScheduled = false;
 
-// function that does the actual parallax animation
+// keeps track of whether each of the elements is in the viewport
+let heroVisible = true;
+let bookNowVisible = false;
+
+// updates each variable when the element enters or exits the viewport
+const heroObserver = new IntersectionObserver((e) => {
+    heroVisible = e[0].isIntersecting
+});
+const bookNowObserver = new IntersectionObserver((e) => {
+    bookNowVisible = e[0].isIntersecting
+});
+
+heroObserver.observe(hero);
+bookNowObserver.observe(bookNow);
+
+// applies parallax effect by making each element scroll at a fraction of the normal speed
 function parallaxAnimation() {
-    // contains the current scroll position
-    const scroll = window.scrollY;
+    // prevents negative scroll values to help with chrome browser quirks
+    const scroll = Math.max(0, window.scrollY);
     
-    // slowly animates the hero parallax element when scrolling
-    hero.style.transform = `translateY(${scroll * 0.1}px)`;
-    
-    // more quickly animates the book now banner when scrolling
-    bookNow.style.backgroundPositionY = scroll * 0.27 + 'px';
-    
-    // when the function runs, it resets this flag ready for the next animation
+    if (heroVisible) {
+        hero.style.transform = `translateY(${scroll * 0.1}px)`;
+    };
+
+    if (bookNowVisible) {
+        bookNow.style.backgroundPositionY = scroll * 0.27 + 'px';
+    };
+
     animationScheduled = false;
 };
 
+// checks if an animation is scheduled, and updates it accordingly
 window.addEventListener('scroll', () => {
-    // only run if we haven't already scheduled an animation
     if (!animationScheduled) {
-        // schedule the animation for the next frame
         requestAnimationFrame(parallaxAnimation);
-        
-        // this flag triggers when an animation is scheduled to run and prevents more requestAnimationFrame calls until the animation runs
         animationScheduled = true;
     };
 });
