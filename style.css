@@ -67,6 +67,7 @@ body {
     justify-content: center;
     position: relative;
     filter: brightness(95%);
+    will-change: transform;
     z-index: -1;
 }
 .hero-parallax img {
@@ -168,24 +169,27 @@ body {
     font-weight: 500;
 }
 #book-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     padding: 2rem;
     background-image: url(./assets/book_now/banner.webp);
-    position: relative;
     background-size: cover;
 }
-#book-now button {
-    display: block;
+#book-now .btn {
+    padding: 13px;
+    margin: 25px auto;
+    font-size: .95rem;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .5px;
-    font-weight: 500;
     color: var(--clr-blk);
     background-color: var(--clr-white);
     border: none;
     border-radius: 5px;
-    padding: 15px 25px;
-    margin: 25px auto;
 }
-#book-now-mobile button {
+#book-now-mobile .btn {
     display: none;
 }
 .activities-title {
@@ -402,7 +406,7 @@ body {
 .cabin-rental .card .contents p::-webkit-scrollbar-thumb {
     background: var(--clr-grey);
 }
-.cabin-rental .card .contents button {
+.cabin-rental .card .contents .btn {
     display: block;
     color: var(--clr-white);
     background: var(--clr-grey);
@@ -411,6 +415,7 @@ body {
     padding: .5rem 1rem;
     font-size: .9rem;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    text-align: center;
     text-transform: uppercase;
     width: 100%;
 }
@@ -482,7 +487,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: flex-start;
-    padding: 1rem 1.8rem;
+    padding: 1rem 2.4rem;
     color: var(--clr-white);
     background-color: var(--clr-grey);
 }
@@ -504,18 +509,21 @@ footer ul li {
         display: none;
     }
     #book-now-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 2rem;
         background-image: url(./assets/book_now/book_now.webp);
         background-position: bottom;
         position: relative;
         background-size: cover;
     }
-    #book-now-mobile button {
-        display: block;
+    #book-now-mobile .btn {
+        display: inline-block;
         color: var(--clr-blk);
         background: var(--clr-white);
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 400;
         border: none;
         border-radius: 5px;
         padding: 15px 25px;
@@ -721,11 +729,11 @@ footer ul li {
     .polaroids .img-wrapper img {
         background: var(--clr-offWhite);
     }
-    #book-now button {
+    #book-now .btn {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
-    #book-now-mobile button {
+    #book-now-mobile .btn {
         color: var(--clr-offWhite);
         background: var(--clr-blk);
     }
@@ -753,7 +761,7 @@ footer ul li {
     .cabin-rental .card .contents p::-webkit-scrollbar-thumb {
         background: var(--clr-offWhite);
     }
-    .cabin-rental .card .contents button {
+    .cabin-rental .card .contents .btn {
         color: var(--clr-blk);
         background: var(--clr-offWhite);
     }
@@ -771,7 +779,7 @@ footer ul li {
     .contact-form .right-section .message-box textarea {
         background: var(--clr-offWhite);
     }
-    .contact-form .right-section button {
+    .contact-form .right-section .btn {
         background: var(--clr-offWhite);
     }
     footer {
