@@ -294,19 +294,17 @@ body {
     height: 100%;
     color: var(--clr-blk);
     background: var(--clr-white);
-    border: solid 2px var(--clr-white);
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .7);
 }
 .cabin-rental .card img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 .cabin-rental .card .contents {
-    padding: 0 .75rem 0.75rem;
     letter-spacing: .5px;
+    padding: .25rem .65rem .65rem .65rem;
 }
 .cabin-rental .card .contents h2 {
     font-weight: 500;
@@ -315,7 +313,7 @@ body {
     margin-bottom: .15rem;
 }
 .cabin-rental .card .contents h3 {
-    font-size: 1rem;
+    font-size: .98rem;
     text-transform: capitalize;
     font-weight: 400;
     text-align: left;
@@ -433,6 +431,12 @@ body {
     border-radius: 7px;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, .4);
 }
+.contact-form .screen-reader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 .contact-form .left-section {
     padding: .5rem .25rem .5rem .5rem;
 }
@@ -451,37 +455,42 @@ body {
     font-weight: 400;
     letter-spacing: .75px;
     text-align: center;
-    line-height: 1.7;
     letter-spacing: 1px;
-    margin: 5px auto;
+    margin: .75rem 0;
 }
-.contact-form .right-section .input-box input,
-.contact-form .right-section .message-box textarea,
+.contact-form .right-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.contact-form .right-section input,
+.contact-form .right-section textarea,
 .contact-form .right-section button {
-    width: 100%;
-    margin: 3px auto;
     border: none;
     border-radius: 2px;
-    height: 40px;
-    padding: 5px;
-    font-size: 1rem;
-    background-color: var(--clr-white);
-    -webkit-tap-highlight-color: transparent;
 }
-.contact-form .right-section .message-box textarea {
-    min-height: 135px;
+.contact-form .right-section input {
+    padding: .5rem .35rem;
+    background: var(--clr-white);
+}
+.contact-form .right-section textarea {
+    min-height: 150px;
+    padding: .25rem .35rem;
     resize: none;
+    background: var(--clr-white);
+}
+.contact-form .right-section input::placeholder {
+    font-size: .9rem;
+}
+.contact-form .right-section textarea::placeholder {
+    font-size: .95rem;
 }
 .contact-form .right-section button {
-    margin: 0 auto 10px;
-    height: 30px;
-    font-size: .9rem;
-    letter-spacing: .5px;
-    color: var(--clr-blk);
-    background-color: var(--clr-white);
-    border-radius: 2px;
-    border: none;
+    padding: .5rem;
     text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: .5px;
+    background: var(--clr-white);
 }
 footer {
     display: grid;
@@ -528,6 +537,18 @@ footer ul li {
         border-radius: 5px;
         padding: 15px 25px;
         margin: 25px auto;
+    }
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .contact-form .left-section {
+        padding: .5rem .5rem 0 .5rem;
+    }
+    .contact-form .right-section {
+        padding: .65rem;
+    }
+    .contact-form .right-section h2 {
+        margin:  0 0 .75rem 0;
     }
 }
 @media screen and (max-width: 1125px) {
@@ -620,13 +641,6 @@ footer ul li {
     }
     .form-container {
         padding: .75rem;
-    }
-    .contact-form {
-        margin: 0 auto;
-        grid-template-columns: 1fr;
-    }
-    .contact-form .left-section {
-        padding: .5rem;
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
@@ -765,24 +779,9 @@ footer ul li {
         color: var(--clr-blk);
         background: var(--clr-offWhite);
     }
-    .right-section .input-box input,
-    .right-section .message-box textarea {
-        background-color: var(--clr-offWhite);
-    }
-    .right-section button {
+    .contact-form .right-section input,
+    .contact-form .right-section textarea,
+    .contact-form .right-section button {
         background: var(--clr-offWhite);
-    }
-    .contact-form {
-        background: var(--clr-grey);
-    }
-    .contact-form .right-section .input-box input,
-    .contact-form .right-section .message-box textarea {
-        background: var(--clr-offWhite);
-    }
-    .contact-form .right-section .btn {
-        background: var(--clr-offWhite);
-    }
-    footer {
-        background: var(--clr-grey);
     }
 }
