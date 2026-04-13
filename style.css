@@ -262,17 +262,17 @@ body {
     font-size: .95rem;
     line-height: 1.7;
 }
-.mobile-title {
+.mobile-only-title {
     display: none;
     margin: 100px auto;
     text-align: center;
     line-height: 2;
 }
-.mobile-title h2 {
+.mobile-only-title h2 {
     font-weight: 400;
     font-size: clamp(1.3rem, 3vw, 1.5rem);
 }
-.mobile-title p {
+.mobile-only-title p {
     font-weight: 300;
     font-size: clamp(1.25rem, 3vw, 1.4rem);
 }
@@ -517,30 +517,6 @@ footer ul li {
     margin: 10px auto;
 }
 @media screen and (max-width: 1275px) {
-    #book-now {
-        display: none;
-    }
-    #book-now-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        background-image: url(./assets/book_now/book_now.webp);
-        background-position: bottom;
-        position: relative;
-        background-size: cover;
-    }
-    #book-now-mobile .btn {
-        display: inline-block;
-        color: var(--clr-blk);
-        background: var(--clr-white);
-        text-transform: uppercase;
-        font-weight: 400;
-        border: none;
-        border-radius: 5px;
-        padding: 15px 25px;
-        margin: 25px auto;
-    }
     .contact-form {
         grid-template-columns: 1fr;
     }
@@ -555,15 +531,6 @@ footer ul li {
     }
 }
 @media screen and (max-width: 1125px) {
-    .cabin-rental-wrapper {
-        background-image: url(./assets/rental_cabins/cabin_rental_bg_large.webp);
-    }
-    .activities {
-        grid-template-columns: repeat(2, 1fr);
-        padding: .75rem;
-    }
-}
-@media screen and (max-width: 986px) {
     .hero-parallax {
         display: none;
     }
@@ -590,6 +557,59 @@ footer ul li {
         border: var(--clr-white) 3px solid;
         padding: .75rem;
     }
+    #book-now {
+        display: none;
+    }
+    #book-now-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-image: url(./assets/book_now/book_now.webp);
+        background-position: bottom;
+        position: relative;
+        background-size: cover;
+    }
+    #book-now-mobile .btn {
+        display: inline-block;
+        color: var(--clr-blk);
+        background: var(--clr-white);
+        text-transform: uppercase;
+        font-weight: 400;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 25px auto;
+    }
+    .activities {
+        grid-template-columns: repeat(2, 1fr);
+        padding: .75rem;
+    }
+    .activities-title {
+        margin: 100px auto;
+    }
+    .mobile-only-title {
+        display: block;
+    }
+    .cabin-rental-wrapper {
+        background-image: none;
+    }
+    .cabin-rental {
+        grid-template-columns: repeat(2, 1fr);
+        padding: .75rem;
+        width: 100%;
+    }
+    .cabin-rental .card {
+        border: none;
+    }
+    .cabin-rental .card .contents .icons span {
+        font-size: 1.025rem;
+    }
+    .form-container {
+        padding: .75rem;
+    }
+}
+@media screen and (max-width: 986px) {
     .polaroids {
         grid-template-columns: 1fr;
         margin: 20px auto;
@@ -625,26 +645,6 @@ footer ul li {
     .polaroids .text #quote {
         display: none;
     }
-    .mobile-title {
-        display: block;
-    }
-    .cabin-rental-wrapper {
-        background-image: none;
-    }
-    .cabin-rental {
-        grid-template-columns: repeat(2, 1fr);
-        padding: .75rem;
-        width: 100%;
-    }
-    .cabin-rental .card {
-        border: none;
-    }
-    .cabin-rental .card .contents .icons span {
-        font-size: 1.025rem;
-    }
-    .form-container {
-        padding: .75rem;
-    }
     footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 0;
@@ -673,7 +673,7 @@ footer ul li {
         width: 45%;
         padding: .5rem;
     }
-    .mobile-title {
+    .mobile-only-title {
         max-width: 80%;
     }
 }
