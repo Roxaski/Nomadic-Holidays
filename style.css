@@ -76,7 +76,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.hero-parallax h1 {
+.hero-parallax h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -544,7 +544,7 @@ footer ul li {
         width: 100%;
         height: auto;
     }
-    .mobile-hero h1 {
+    .mobile-hero h2 {
         position: absolute;
         width: 45%;
         text-align: center;
@@ -660,7 +660,7 @@ footer ul li {
     }
 }
 @media screen and (max-width: 605px) {
-    .mobile-hero h1 {
+    .mobile-hero h2 {
         width: 35%;
         padding: .75rem;
     }
@@ -669,7 +669,7 @@ footer ul li {
     }
 }
 @media screen and (max-width: 525px) {
-    .mobile-hero h1 {
+    .mobile-hero h2 {
         width: 45%;
         padding: .5rem;
     }
@@ -693,7 +693,7 @@ footer ul li {
         justify-content: center;
         position: relative;
     }
-    .mobile-hero h1 {
+    .mobile-hero h2 {
         position: absolute;
         width: 40%;
         text-align: center;
