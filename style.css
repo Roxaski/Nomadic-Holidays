@@ -119,7 +119,8 @@ body {
 .polaroids .text:nth-child(2) {
     padding-right: 2rem;
 }
-.polaroids .text h2 {
+.polaroids .text h3 {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 500;
@@ -204,10 +205,10 @@ body {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 500;
     letter-spacing: .25px;
+    margin-bottom: .5rem;
 }
-.activities-title p {
-    line-height: 1.7;
-    font-size: clamp(1rem, 3vw, 1.25rem);
+.activities-title h3 {
+    font-size: clamp(1.1rem, 3vw, 1.25rem);
     font-weight: 300;
     letter-spacing: .25px;
 }
@@ -234,7 +235,8 @@ body {
     top: .15rem;
 }
 .activities .card:nth-child(2) .icon {
-    top: .1rem;
+    top: .15rem;
+    fill: none;
 }
 .activities .card:nth-child(3) .icon {
     top: .32rem;
@@ -269,12 +271,14 @@ body {
     line-height: 2;
 }
 .mobile-only-title h2 {
-    font-weight: 400;
-    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: .25px;
 }
-.mobile-only-title p {
+.mobile-only-title h3 {
+    font-size: clamp(1.1rem, 3vw, 1.25rem);
     font-weight: 300;
-    font-size: clamp(1.25rem, 3vw, 1.4rem);
+    letter-spacing: .25px;
 }
 .cabin-rental-wrapper {
     background-image: url(./assets/rental_cabins/cabin_rental_bg_extra_large.webp);
@@ -578,7 +582,7 @@ footer ul li {
         font-weight: 400;
         border: none;
         border-radius: 5px;
-        padding: 15px 25px;
+        padding: 12px;
         margin: 25px auto;
     }
     .activities {
@@ -639,7 +643,7 @@ footer ul li {
     .polaroids .text:nth-child(2) {
         padding: 0 .75rem;
     }
-    .polaroids .text h2 {
+    .polaroids .text h3 {
         margin: 10px 0 0 0;
     }
     .polaroids .text .quote {
@@ -648,7 +652,7 @@ footer ul li {
     footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 0;
-        padding: 1rem 1.5rem;
+        padding: 1.15rem;
     }
 }
 @media screen and (max-width: 865px) {
@@ -673,6 +677,7 @@ footer ul li {
         width: 45%;
         padding: .5rem;
     }
+    .activities-title,
     .mobile-only-title {
         max-width: 80%;
     }
