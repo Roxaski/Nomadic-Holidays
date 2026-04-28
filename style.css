@@ -35,6 +35,7 @@
 :root {
     --clr-blk: #272626;
     --clr-grey: #3b3a3a;
+    --clr-lightGrey: #e3e0e0;
     --clr-white: #f9f9f9;
     --clr-offWhite: #e4e1e1;
     --clr-green: #6d7c12;
@@ -507,18 +508,19 @@ footer {
     color: var(--clr-white);
     background-color: var(--clr-grey);
 }
-footer h2 {
+footer h3 {
     font-size: clamp(.95rem, 3vw, 1rem);
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: .75px;
 }
 footer ul li {
     font-size: clamp(.8rem, 3vw, .85rem);
     text-transform: capitalize;
-    letter-spacing: .75px;
+    letter-spacing: .5px;
     list-style: none;
-    margin: 10px auto;
+    margin: 15px auto;
+    color: var(--clr-lightGrey);
 }
 @media screen and (max-width: 1275px) {
     .contact-form {
