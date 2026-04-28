@@ -120,11 +120,11 @@ body {
 .polaroids .text:nth-child(2) {
     padding-right: 2rem;
 }
-.polaroids .text h3 {
+.polaroids .text h2 {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     text-transform: capitalize;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .polaroids .text p {
     font-size: clamp(1rem, 3vw, 1.025rem);
@@ -312,17 +312,16 @@ body {
     padding: .25rem .65rem .65rem .65rem;
 }
 .cabin-rental .card .contents h2 {
-    font-weight: 500;
-    font-size: clamp(1.15rem, 3vw, 1.3rem);
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     text-transform: capitalize;
-    margin-bottom: .15rem;
 }
-.cabin-rental .card .contents h3 {
-    font-size: .98rem;
+.cabin-rental .card .contents .prices {
     text-transform: capitalize;
     font-weight: 400;
+    color: var(--clr-grey);
     text-align: left;
-    margin-bottom: 1rem;
+    height: auto;
 }
 .cabin-rental .card .contents .icons ul li {
     display: inline-block;
@@ -335,13 +334,11 @@ body {
 .cabin-rental .card .contents .icons ul li span::before,
 .cabin-rental .card .contents .icons ul li span::after {
     opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 225ms ease, transform 225ms ease;
 }
 .cabin-rental .card .contents .icons ul li span::before {
     content: attr(data-tooltip);
     position: absolute;
-    top: -3.2rem;
+    top: -3.25rem;
     width: 6.5rem;
     height: auto;
     font-size: clamp(.8rem, 3vw, .85rem);
@@ -356,7 +353,7 @@ body {
 .cabin-rental .card .contents .icons ul li span::after {
     content: '';
     position: absolute;
-    top: -1.35rem;
+    top: -1.3rem;
     left: 35%;
     width: 0;
     height: 0;
@@ -364,12 +361,6 @@ body {
     border-right: 7px solid transparent;
     border-top: 7px solid var(--clr-grey);
     opacity: 0;
-}
-.cabin-rental .card .contents .icons ul li:nth-child(odd) span::before {
-    transform: translateY(-10px);
-}
-.cabin-rental .card .contents .icons ul li:nth-child(even) span::before {
-    transform: translateY(5px);
 }
 .cabin-rental .card .contents .icons ul li:nth-last-child(1) span::before {
     left: auto;
@@ -384,20 +375,19 @@ body {
 .cabin-rental .card .contents .icons ul li span:hover:before,
 .cabin-rental .card .contents .icons ul li span:hover:after {
     opacity: 1;
-    transform: translateY(10px);
 }
 .cabin-rental .card .contents .icon {
     width: 1.25rem;
     height: auto;
     fill: var(--clr-grey);
+    margin-bottom: 10px;
 }
 .cabin-rental .card .contents p {
     height: 6rem;
-    margin: 15px auto;
-    padding-right: 1rem;
     font-weight: 300;
     letter-spacing: .5px;
-    line-height: 1.5;
+    margin: 3px auto 20px;
+    padding-right: 1rem;
     overflow-Y: scroll;
 }
 .cabin-rental .card .contents p::-webkit-scrollbar {
@@ -645,7 +635,7 @@ footer ul li {
     .polaroids .text:nth-child(2) {
         padding: 0 .75rem;
     }
-    .polaroids .text h3 {
+    .polaroids .text h2 {
         margin: 10px 0 0 0;
     }
     .polaroids .text .quote {
@@ -777,6 +767,9 @@ footer ul li {
     .cabin-rental .card {
         color: var(--clr-offWhite);
         background: var(--clr-grey);
+    }
+    .cabin-rental .card .contents .prices {
+        color: var(--clr-lightGrey);
     }
     .cabin-rental .card .contents .icons ul li span::after {
         border-top: 7px solid var(--clr-offWhite);
