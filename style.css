@@ -791,3 +791,38 @@ footer ul li {
         background: var(--clr-offWhite);
     }
 }
+@media (prefers-reduced-motion: reduce) {
+    .hero-parallax {
+        display: none;
+    }
+    .mobile-hero {
+        display: flex;
+    }
+    #book-now {
+        display: none;
+    }
+    #book-now-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-image: url(./assets/book_now/book_now.webp);
+        background-position: bottom;
+        position: relative;
+        background-size: cover;
+    }
+    #book-now-mobile .btn {
+        display: inline-block;
+        color: var(--clr-blk);
+        background: var(--clr-white);
+        text-transform: uppercase;
+        font-weight: 400;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        margin: 25px auto;
+    }
+    .cabin-rental-wrapper {
+        background-image: none;
+    }
+}
